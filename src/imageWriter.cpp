@@ -44,6 +44,20 @@ void saveOneFrameImmed(const ImageFrameData &data)
                 1.0);  // alpha
     }
 
+    for (Coord loc : data.foodLocs) {
+        // black
+        color[0] = 0;
+        color[1] = 0;
+        color[2] = 0;
+
+        image.draw_circle(
+                loc.x * p.displayScale,
+                ((p.sizeY - loc.y) - 1) * p.displayScale,
+                p.agentSize,
+                color,  // rgb
+                1.0);  // alpha
+    }
+
     // Draw agents
 
     constexpr uint8_t maxColorVal = 0xb0;
@@ -175,6 +189,7 @@ bool ImageWriter::saveVideoFrameSync(unsigned simStep, unsigned generation)
     data.indivLocs.clear();
     data.indivColors.clear();
     data.barrierLocs.clear();
+    data.foodLocs.clear();
     data.signalLayers.clear();
     //todo!!!
     for (uint16_t index = 1; index <= p.population; ++index) {
@@ -183,6 +198,11 @@ bool ImageWriter::saveVideoFrameSync(unsigned simStep, unsigned generation)
             data.indivLocs.push_back(indiv.loc);
             data.indivColors.push_back(makeGeneticColor(indiv.genome));
         }
+    }
+
+    auto const &foodLocs = grid.getFoodLocations();
+    for (Coord loc : foodLocs) {
+        data.foodLocs.push_back(loc);
     }
 
     auto const &barrierLocs = grid.getBarrierLocations();

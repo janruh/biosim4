@@ -35,6 +35,7 @@ void ParamManager::setDefaults()
     privParams.stepsPerGeneration = 100;
     privParams.maxGenerations = 100;
     privParams.barrierType = 0;
+    privParams.percentageFoodLocations = 20;
     privParams.replaceBarrierType = 0;
     privParams.replaceBarrierTypeGenerationNumber = (uint32_t)-1;
     privParams.numThreads = 1;
@@ -52,6 +53,7 @@ void ParamManager::setDefaults()
     privParams.responsivenessCurveKFactor = 2;
     privParams.longProbeDistance = 16;
     privParams.shortProbeBarrierDistance = 3;
+    privParams.shortProbeFoodDistance = 10;
     privParams.valenceSaturationMag = 0.5;
     privParams.saveVideo = true;
     privParams.videoStride = 1;
@@ -220,6 +222,9 @@ void ParamManager::ingestParameter(std::string name, std::string val)
         else if (name == "shortprobebarrierdistance" && isUint && uVal > 0) {
             privParams.shortProbeBarrierDistance = uVal; break;
         }
+        else if (name == "shortprobefooddistance" && isUint && uVal > 0) {
+            privParams.shortProbeFoodDistance = uVal; break;
+        }
         else if (name == "valencesaturationmag" && isFloat && dVal >= 0.0) {
             privParams.valenceSaturationMag = dVal; break;
         }
@@ -258,6 +263,9 @@ void ParamManager::ingestParameter(std::string name, std::string val)
         }
         else if (name == "updategraphlogstride" && val == "videoStride") {
             privParams.updateGraphLogStride = privParams.videoStride; break;
+        }
+        else if (name == "percentagefoodlocations" && isUint) {
+            privParams.percentageFoodLocations = uVal; break;
         }
         else {
             std::cout << "Invalid param: " << name << " = " << val << std::endl;

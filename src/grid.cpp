@@ -29,6 +29,28 @@ Coord Grid::findEmptyLocation() const {
     return loc;
 }
 
+void Grid::initializeFood(unsigned percentageFoodLocations)
+{
+   uint32_t num_cells = data.size() * grid.data[0].size();
+   uint32_t num_food_cells = (uint32_t) ((percentageFoodLocations * num_cells) / 100);
+
+   foodLocations.clear();
+
+   for (unsigned i = 0; i < num_food_cells; i++) {
+       Coord loc = findEmptyLocation();
+       set(loc, FOOD);
+       foodLocations.push_back(loc);
+   }
+}
+
+void Grid::removeFoodLocation(Coord loc)
+{
+    std::vector<Coord>::iterator position = std::find(foodLocations.begin(),
+            foodLocations.end(), loc);
+    if (position != foodLocations.end()) {
+        foodLocations.erase(position);
+    }
+}
 
 // This is a utility function used when inspecting a local neighborhood around
 // some location. This function feeds each valid (in-bounds) location in the specified

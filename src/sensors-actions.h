@@ -51,6 +51,8 @@ enum Sensor {
     AGE,               // I
     BARRIER_FWD,       // W neighborhood barrier distance forward-reverse axis
     BARRIER_LR,        // W neighborhood barrier distance left-right axis
+    FOOD_LR,           // W neighborhood food distance left-right axis
+    FOOD_FWD,          // W neighborhood food distance forward-reverse axis
     RANDOM,            //   random sensor value, uniform distribution
     SIGNAL0,           // W strength of signal0 in neighborhood
     SIGNAL0_FWD,       // W strength of signal0 in the forward-reverse axis

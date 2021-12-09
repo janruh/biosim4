@@ -18,6 +18,8 @@ struct Indiv {
     uint16_t index; // index into peeps[] container
     Coord loc;   // refers to a location in grid[][]
     Coord birthLoc;
+    unsigned size;
+    unsigned energy;
     unsigned age;
     Genome genome;
     NeuralNet nnet;   // derived from .genome

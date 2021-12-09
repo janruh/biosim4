@@ -84,6 +84,40 @@ float getShortProbeBarrierDistance(Coord loc0, Dir dir, unsigned probeDistance)
     return sensorVal;
 }
 
+// Converts the number of locations (not including loc) to the next food location
+// along opposite directions of the specified axis to the sensor range. If no food
+// is found, the result is sensor mid-range. Ignores agents in the path.
+float getShortProbeFoodDistance(Coord loc0, Dir dir, unsigned probeDistance)
+{
+    unsigned countFwd = 0;
+    unsigned countRev = 0;
+    Coord loc = loc0 + dir;
+    unsigned numLocsToTest = probeDistance;
+    // Scan positive direction
+    while (numLocsToTest > 0 && grid.isInBounds(loc) && !grid.isFoodAt(loc)) {
+        ++countFwd;
+        loc = loc + dir;
+        --numLocsToTest;
+    }
+    if (numLocsToTest > 0 && !grid.isInBounds(loc)) {
+        countFwd = probeDistance;
+    }
+    // Scan negative direction
+    numLocsToTest = probeDistance;
+    loc = loc0 - dir;
+    while (numLocsToTest > 0 && grid.isInBounds(loc) && !grid.isFoodAt(loc)) {
+        ++countRev;
+        loc = loc - dir;
+        --numLocsToTest;
+    }
+    if (numLocsToTest > 0 && !grid.isInBounds(loc)) {
+        countRev = probeDistance;
+    }
+
+    float sensorVal = ((countFwd - countRev) + probeDistance); // convert to 0..2*probeDistance
+    sensorVal = (sensorVal / 2.0) / probeDistance; // convert to 0.0..1.0
+    return sensorVal;
+}
 
 float getSignalDensity(unsigned layerNum, Coord loc)
 {
@@ -322,8 +356,24 @@ float Indiv::getSensor(Sensor sensorNum, unsigned simStep) const
     case Sensor::BARRIER_LR:
         // Sense the nearest barrier along axis perpendicular to last movement direction, mapped
         // to sensor range 0.0..1.0
-        sensorVal = getShortProbeBarrierDistance(loc, lastMoveDir.rotate90DegCW(), p.shortProbeBarrierDistance);
+        sensorVal = getShortProbeBarrierDistance(loc, lastMoveDir.rotate90DegCW(),
+                p.shortProbeBarrierDistance);
         break;
+    case Sensor::FOOD_LR:
+    {
+        // Sense the nearest food along axis perpendicular to last movement direction, mapped
+        // to sensor range 0.0..1.0
+        sensorVal = getShortProbeFoodDistance(loc, lastMoveDir.rotate90DegCW(),
+                p.shortProbeFoodDistance);
+        break;
+    }
+    case Sensor::FOOD_FWD:
+    {
+        // Sense the nearest food along axis of last movement direction, mapped
+        // to sensor range 0.0..1.0
+        sensorVal = getShortProbeFoodDistance(loc, lastMoveDir, p.shortProbeFoodDistance);
+        break;
+    }
     case Sensor::RANDOM:
         // Returns a random sensor value in the range 0.0..1.0.
         sensorVal = randomUint() / (float)UINT_MAX;

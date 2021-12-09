@@ -336,6 +336,10 @@ std::pair<bool, float> passedSurvivalCriterion(const Indiv &indiv, unsigned chal
                   std::pair<bool, float> { true, (radius - distance) / radius }
                 : std::pair<bool, float> { false, 0.0 };
         }
+    case CHALLENGE_EAT_TO_SURVIVE:
+        {
+            return std::pair<bool, float> { indiv.energy > 0, 1 };
+        }
 
     default:
         assert(false);

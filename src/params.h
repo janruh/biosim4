@@ -41,6 +41,8 @@ struct Params {
     unsigned responsivenessCurveKFactor; // 1, 2, 3, or 4
     unsigned longProbeDistance; // > 0
     unsigned shortProbeBarrierDistance; // > 0
+    unsigned shortProbeFoodDistance; // > 0
+    unsigned percentageFoodLocations; // >= 0
     float valenceSaturationMag;
     bool saveVideo;
     unsigned videoStride; // > 0

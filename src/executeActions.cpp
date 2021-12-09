@@ -230,8 +230,15 @@ void executeActions(Indiv &indiv, std::array<float, Action::NUM_ACTIONS> &action
 
     // Move there if it's a valid location
     Coord newLoc = indiv.loc + movementOffset;
-    if (grid.isInBounds(newLoc) && grid.isEmptyAt(newLoc)) {
+    if (grid.isInBounds(newLoc) && (grid.isEmptyAt(newLoc) || grid.isFoodAt(newLoc))) {
         peeps.queueForMove(indiv, newLoc);
+
+        // If there is food at new location, consume
+        if (grid.isFoodAt(newLoc)) {
+            indiv.energy += 1;
+            grid.set(newLoc, EMPTY);
+            grid.removeFoodLocation(newLoc);
+        }
     }
 }
 
