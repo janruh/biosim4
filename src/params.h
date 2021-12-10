@@ -43,6 +43,10 @@ struct Params {
     unsigned shortProbeBarrierDistance; // > 0
     unsigned shortProbeFoodDistance; // > 0
     unsigned percentageFoodLocations; // >= 0
+    unsigned frequencyFoodSpawn; // > 0
+    unsigned initialEnergy; // >= 0
+    unsigned energyPerFoodUnit; // > 0
+    unsigned movementEnergyCost; // >= 0
     float valenceSaturationMag;
     bool saveVideo;
     unsigned videoStride; // > 0

@@ -1,4 +1,4 @@
-cscope 15 $HOME/biosim4/src               0002764253
+cscope 15 $HOME/biosim4/src               0002768778
 	@analysis.cpp
 
 3 
@@ -132,16 +132,24 @@ AGE
 :  "signal 0 LR"; ;
 
 37 
+	gFOOD_LR
+:  "foodÜr"; ;
+
+38 
+	gFOOD_FWD
+:  "food fwd"; ;
+
+39 
 	gGENETIC_SIM_FWD
 :  "genetic similarity fwd"; ;
 
-38 : 
+40 : 
 as£π
 (
 Ál£
 ); ;
 
-44 
+46 
 	g°d
 ::
 °rög
@@ -153,85 +161,85 @@ A˘i⁄
 a˘i⁄
 )
 
-46 
+48 
 a˘i⁄
 ) {
 
-47 
+49 
 MOVE_EAST
 :  "moveÉast"; ;
 
-48 
+50 
 	gMOVE_WEST
 :  "move west"; ;
 
-49 
+51 
 	gMOVE_NORTH
 :  "moveÇorth"; ;
 
-50 
+52 
 	gMOVE_SOUTH
 :  "move south"; ;
 
-51 
+53 
 	gMOVE_FORWARD
 :  "move fwd"; ;
 
-52 
+54 
 	gMOVE_X
 :  "move X"; ;
 
-53 
+55 
 	gMOVE_Y
 :  "move Y"; ;
 
-54 
+56 
 	gSET_RESPONSIVENESS
 :  "set inv-responsiveness"; ;
 
-55 
+57 
 	gSET_OSCILLATOR_PERIOD
 :  "set osc1"; ;
 
-56 
+58 
 	gEMIT_SIGNAL0
 :  "emit signal 0"; ;
 
-57 
+59 
 	gKILL_FORWARD
 :  "kill fwd"; ;
 
-58 
+60 
 	gMOVE_REVERSE
 :  "moveÑeverse"; ;
 
-59 
+61 
 	gMOVE_LEFT
 :  "moveÜeft"; ;
 
-60 
+62 
 	gMOVE_RIGHT
 :  "moveÑight"; ;
 
-61 
+63 
 	gMOVE_RL
 :  "move R-L"; ;
 
-62 
+64 
 	gMOVE_RANDOM
 :  "moveÑandom"; ;
 
-63 
+65 
 	gSET_LONGPROBE_DIST
 :  "setÜongprobe dist"; ;
 
-64 : 
+66 : 
 as£π
 (
 Ál£
 ); ;
 
-71 
+73 
 	g°d
 ::
 °rög
@@ -243,101 +251,109 @@ Sís‹
 £ns‹
 )
 
-73 
+75 
 £ns‹
 ) {
 
-74 
+76 
 AGE
 :  "Age"; ;
 
-75 
+77 
 	gBOUNDARY_DIST
 :  "ED"; ;
 
-76 
+78 
 	gBOUNDARY_DIST_X
 :  "EDx"; ;
 
-77 
+79 
 	gBOUNDARY_DIST_Y
 :  "EDy"; ;
 
-78 
+80 
 	gLAST_MOVE_DIR_X
 :  "LMx"; ;
 
-79 
+81 
 	gLAST_MOVE_DIR_Y
 :  "LMy"; ;
 
-80 
+82 
 	gLOC_X
 :  "Lx"; ;
 
-81 
+83 
 	gLOC_Y
 :  "Ly"; ;
 
-82 
+84 
 	gLONGPROBE_POP_FWD
 :  "LPf"; ;
 
-83 
+85 
 	gLONGPROBE_BAR_FWD
 :  "LPb"; ;
 
-84 
+86 
 	gBARRIER_FWD
 :  "Bfd"; ;
 
-85 
+87 
 	gBARRIER_LR
 :  "Blr"; ;
 
-86 
+88 
 	gOSC1
 :  "Osc"; ;
 
-87 
+89 
 	gPOPULATION
 :  "Pop"; ;
 
-88 
+90 
 	gPOPULATION_FWD
 :  "Pfd"; ;
 
-89 
+91 
 	gPOPULATION_LR
 :  "Plr"; ;
 
-90 
+92 
 	gRANDOM
 :  "Rnd"; ;
 
-91 
+93 
 	gSIGNAL0
 :  "Sg"; ;
 
-92 
+94 
 	gSIGNAL0_FWD
 :  "Sfd"; ;
 
-93 
+95 
 	gSIGNAL0_LR
 :  "Slr"; ;
 
-94 
+96 
+	gFOOD_LR
+:  "Flr"; ;
+
+97 
+	gFOOD_FWD
+:  "Ffd"; ;
+
+98 
 	gGENETIC_SIM_FWD
 :  "Gen"; ;
 
-95 : 
+99 : 
 as£π
 (
 Ál£
 ); ;
 
-102 
+106 
 	g°d
 ::
 °rög
@@ -349,93 +365,93 @@ A˘i⁄
 a˘i⁄
 )
 
-104 
+108 
 a˘i⁄
 ) {
 
-105 
+109 
 MOVE_EAST
 :  "MvE"; ;
 
-106 
+110 
 	gMOVE_WEST
 :  "MvW"; ;
 
-107 
+111 
 	gMOVE_NORTH
 :  "MvN"; ;
 
-108 
+112 
 	gMOVE_SOUTH
 :  "MvS"; ;
 
-109 
+113 
 	gMOVE_X
 :  "MvX"; ;
 
-110 
+114 
 	gMOVE_Y
 :  "MvY"; ;
 
-111 
+115 
 	gMOVE_FORWARD
 :  "Mfd"; ;
 
-112 
+116 
 	gSET_RESPONSIVENESS
 :  "Res"; ;
 
-113 
+117 
 	gSET_OSCILLATOR_PERIOD
 :  "OSC"; ;
 
-114 
+118 
 	gEMIT_SIGNAL0
 :  "SG"; ;
 
-115 
+119 
 	gKILL_FORWARD
 :  "Klf"; ;
 
-116 
+120 
 	gMOVE_REVERSE
 :  "Mrv"; ;
 
-117 
+121 
 	gMOVE_LEFT
 :  "MvL"; ;
 
-118 
+122 
 	gMOVE_RIGHT
 :  "MvR"; ;
 
-119 
+123 
 	gMOVE_RL
 :  "MRL"; ;
 
-120 
+124 
 	gMOVE_RANDOM
 :  "Mrn"; ;
 
-121 
+125 
 	gSET_LONGPROBE_DIST
 :  "LPD"; ;
 
-122 : 
+126 : 
 as£π
 (
 Ál£
 ); ;
 
-130 
+134 
 ¥ötSís‹sA˘i⁄s
 ()
 
-132 
+136 
 	gi
 ;
 
-133 
+137 
 	g°d
 ::
 cout
@@ -445,7 +461,7 @@ cout
 ídl
 ;
 
-134 
+138 
 	gi
  = 0; i < 
 	gSís‹
@@ -453,7 +469,7 @@ cout
 NUM_SENSES
 ; ++i) {
 
-135 
+139 
 	g°d
 ::
 cout
@@ -469,7 +485,7 @@ i
 ídl
 ;
 
-137 
+141 
 	g°d
 ::
 cout
@@ -479,7 +495,7 @@ cout
 ídl
 ;
 
-138 
+142 
 	gi
  = 0; i < 
 	gA˘i⁄
@@ -487,7 +503,7 @@ cout
 NUM_ACTIONS
 ; ++i) {
 
-139 
+143 
 	g°d
 ::
 cout
@@ -503,7 +519,7 @@ i
 ídl
 ;
 
-141 
+145 
 	g°d
 ::
 cout
@@ -513,23 +529,23 @@ cout
 ídl
 ;
 
-146 
+150 
 	gIndiv
 ::
 ¥ötGíome
 () const
 
-148 
+152 
 c⁄°ex¥
  
 gíesPîLöe
  = 8;
 
-149 
+153 
 	gcou¡
  = 0;
 
-150 
+154 
 Gíe
  
 	ggíe
@@ -537,13 +553,13 @@ Gíe
 gíome
 ) {
 
-151 i‡(
+155 i‡(
 cou¡
  =
 gíesPîLöe
 ) {
 
-152 
+156 
 °d
 ::
 cout
@@ -551,33 +567,33 @@ cout
 ídl
 ;
 
-153 
+157 
 	gcou¡
  = 0;
 
-154 } i‡(
+158 } i‡(
 	gcou¡
  != 0) {
 
-155 
+159 
 °d
 ::
 cout
  << " ";
 
-158 
+162 
 as£π
 ((
 Gíe
 ) == 4);
 
-159 
+163 
 uöt32_t
  
 	gn
 ;
 
-160 
+164 
 	g°d
 ::
 mem˝y
@@ -587,7 +603,7 @@ n
 gíe
 , (n));
 
-161 
+165 
 	g°d
 ::
 cout
@@ -603,11 +619,11 @@ hex
 n
 ;
 
-162 ++
+166 ++
 	gcou¡
 ;
 
-164 
+168 
 	g°d
 ::
 cout
@@ -619,13 +635,13 @@ dec
 ídl
 ;
 
-233 
+237 
 	gIndiv
 ::
 ¥ötIGøphEdgeLi°
 () const
 
-235 autÿ& 
+239 autÿ& 
 c⁄n
  : 
 ¬ë
@@ -633,7 +649,7 @@ c⁄n
 c⁄√˘i⁄s
 ) {
 
-236 i‡(
+240 i‡(
 c⁄n
 .
 sour˚Ty≥
@@ -641,7 +657,7 @@ sour˚Ty≥
 SENSOR
 ) {
 
-237 
+241 
 °d
 ::
 cout
@@ -655,7 +671,7 @@ c⁄n
 sour˚Num
 ));
 
-239 
+243 
 	g°d
 ::
 cout
@@ -669,13 +685,13 @@ c⁄n
 sour˚Num
 );
 
-242 
+246 
 	g°d
 ::
 cout
  << " ";
 
-244 i‡(
+248 i‡(
 	gc⁄n
 .
 	gsökTy≥
@@ -683,7 +699,7 @@ cout
 ACTION
 ) {
 
-245 
+249 
 °d
 ::
 cout
@@ -697,7 +713,7 @@ c⁄n
 sökNum
 ));
 
-247 
+251 
 	g°d
 ::
 cout
@@ -711,7 +727,7 @@ c⁄n
 sökNum
 );
 
-250 
+254 
 	g°d
 ::
 cout
@@ -727,27 +743,27 @@ weight
 ídl
 ;
 
-255 
+259 
 avîageGíomeLígth
 ()
 
-257 
+261 
 	gcou¡
  = 100;
 
-258 
+262 
 	gnumbîSam∂es
  = 0;
 
-259 
+263 
 	gsum
  = 0;
 
-261 
+265 
 	gcou¡
 -- > 0) {
 
-262 
+266 
 	gsum
  +
 ≥ïs
@@ -763,17 +779,17 @@ p›uœti⁄
 size
 ();
 
-263 ++
+267 ++
 	gnumbîSam∂es
 ;
 
-265  
+269  
 	gsum
  / 
 	gnumbîSam∂es
 ;
 
-272 
+276 
 ≠≥ndEpochLog
 (
 gíî©i⁄
@@ -783,7 +799,7 @@ numbîSurviv‹s
 murdîCou¡
 )
 
-274 
+278 
 	g°d
 ::
 of°ªam
@@ -791,11 +807,11 @@ of°ªam
 fouçut
 ;
 
-276 i‡(
+280 i‡(
 	ggíî©i⁄
  == 0) {
 
-277 
+281 
 fouçut
 .
 ›í
@@ -805,13 +821,13 @@ p
 logDú
  + "/epoch-log.txt");
 
-278 
+282 
 	gfouçut
 .
 ˛o£
 ();
 
-281 
+285 
 	gfouçut
 .
 ›í
@@ -827,13 +843,13 @@ ios
 ≠p
 );
 
-283 i‡(
+287 i‡(
 	gfouçut
 .
 is_›í
 ()) {
 
-284 
+288 
 	gfouçut
  << 
 	ggíî©i⁄
@@ -843,7 +859,7 @@ is_›í
 gíëicDivîsôy
 ()
 
-285 << " " << 
+289 << " " << 
 avîageGíomeLígth
 (Ë<< " " << 
 	gmurdîCou¡
@@ -853,17 +869,17 @@ avîageGíomeLígth
 ídl
 ;
 
-287 
+291 
 as£π
 (
 Ál£
 );
 
-293 
+297 
 di•œySig«lU£
 ()
 
-295 i‡(
+299 i‡(
 	gSís‹
 ::
 SIGNAL0
@@ -877,15 +893,15 @@ SIGNAL0_FWD
 SIGNAL0_LR
  > Sensor::NUM_SENSES) {
 
-299 
+303 
 	gsum
  = 0;
 
-300 
+304 
 	gcou¡
  = 0;
 
-302 
+306 
 öt16_t
  
 	gx
@@ -895,7 +911,7 @@ SIGNAL0_LR
 	gsizeX
 ; ++x) {
 
-303 
+307 
 öt16_t
  
 	gy
@@ -905,7 +921,7 @@ SIGNAL0_LR
 	gsizeY
 ; ++y) {
 
-304 
+308 
 	gmagnôude
  = 
 sig«ls
@@ -917,21 +933,21 @@ x
 y
  });
 
-305 i‡(
+309 i‡(
 	gmagnôude
  != 0) {
 
-306 ++
+310 ++
 cou¡
 ;
 
-307 
+311 
 	gsum
  +
 magnôude
 ;
 
-311 
+315 
 	g°d
 ::
 cout
@@ -951,11 +967,11 @@ sum
 ídl
 ;
 
-318 
+322 
 di•œySís‹A˘i⁄Re„ªn˚Cou¡s
 ()
 
-320 
+324 
 	g°d
 ::
 ve˘‹
@@ -967,7 +983,7 @@ Sís‹
 NUM_SENSES
 , 0);
 
-321 
+325 
 	g°d
 ::
 ve˘‹
@@ -979,7 +995,7 @@ A˘i⁄
 NUM_ACTIONS
 , 0);
 
-323 
+327 
 	gödex
  = 1; index <
 p
@@ -987,7 +1003,7 @@ p
 p›uœti⁄
 ; ++index) {
 
-324 i‡(
+328 i‡(
 	g≥ïs
 [
 ödex
@@ -995,7 +1011,7 @@ p›uœti⁄
 	gÆive
 ) {
 
-325 c⁄° 
+329 c⁄° 
 	gIndiv
  &
 	gödiv
@@ -1005,7 +1021,7 @@ p›uœti⁄
 ödex
 ];
 
-326 c⁄° 
+330 c⁄° 
 	gGíe
  &
 	ggíe
@@ -1017,7 +1033,7 @@ p›uœti⁄
 c⁄√˘i⁄s
 ) {
 
-327 i‡(
+331 i‡(
 gíe
 .
 sour˚Ty≥
@@ -1025,7 +1041,7 @@ sour˚Ty≥
 SENSOR
 ) {
 
-328 
+332 
 as£π
 (
 gíe
@@ -1037,7 +1053,7 @@ Sís‹
 NUM_SENSES
 );
 
-329 ++
+333 ++
 	g£ns‹Cou¡s
 [(
 Sís‹
@@ -1047,7 +1063,7 @@ gíe
 sour˚Num
 ];
 
-331 i‡(
+335 i‡(
 	ggíe
 .
 	gsökTy≥
@@ -1055,7 +1071,7 @@ sour˚Num
 ACTION
 ) {
 
-332 
+336 
 as£π
 (
 gíe
@@ -1067,7 +1083,7 @@ A˘i⁄
 NUM_ACTIONS
 );
 
-333 ++
+337 ++
 	ga˘i⁄Cou¡s
 [(
 A˘i⁄
@@ -1077,7 +1093,7 @@ gíe
 sökNum
 ];
 
-339 
+343 
 	g°d
 ::
 cout
@@ -1087,7 +1103,7 @@ cout
 ídl
 ;
 
-340 
+344 
 	gi
  = 0; i < 
 	g£ns‹Cou¡s
@@ -1095,13 +1111,13 @@ cout
 size
 (); ++i) {
 
-341 i‡(
+345 i‡(
 	g£ns‹Cou¡s
 [
 i
 ] > 0) {
 
-342 
+346 
 	g°d
 ::
 cout
@@ -1119,7 +1135,7 @@ Sís‹
 ídl
 ;
 
-345 
+349 
 	g°d
 ::
 cout
@@ -1129,7 +1145,7 @@ cout
 ídl
 ;
 
-346 
+350 
 	gi
  = 0; i < 
 	ga˘i⁄Cou¡s
@@ -1137,13 +1153,13 @@ cout
 size
 (); ++i) {
 
-347 i‡(
+351 i‡(
 	ga˘i⁄Cou¡s
 [
 i
 ] > 0) {
 
-348 
+352 
 	g°d
 ::
 cout
@@ -1161,17 +1177,17 @@ A˘i⁄
 ídl
 ;
 
-354 
+358 
 di•œySam∂eGíomes
 (
 cou¡
 )
 
-356 
+360 
 	gödex
  = 1;
 
-357 
+361 
 	gödex
  = 1; 
 	gcou¡
@@ -1181,7 +1197,7 @@ p
 p›uœti⁄
 ; ++index) {
 
-358 i‡(
+362 i‡(
 	g≥ïs
 [
 ödex
@@ -1189,7 +1205,7 @@ p›uœti⁄
 	gÆive
 ) {
 
-359 
+363 
 	g°d
 ::
 cout
@@ -1201,7 +1217,7 @@ cout
 ídl
 ;
 
-360 
+364 
 	g≥ïs
 [
 ödex
@@ -1209,7 +1225,7 @@ cout
 ¥ötGíome
 ();
 
-361 
+365 
 	g°d
 ::
 cout
@@ -1219,7 +1235,7 @@ cout
 ídl
 ;
 
-364 
+368 
 	g≥ïs
 [
 ödex
@@ -1227,7 +1243,7 @@ cout
 ¥ötIGøphEdgeLi°
 ();
 
-367 
+371 
 	g°d
 ::
 cout
@@ -1237,11 +1253,11 @@ cout
 ídl
 ;
 
-368 --
+372 --
 	gcou¡
 ;
 
-372 
+376 
 di•œySís‹A˘i⁄Re„ªn˚Cou¡s
 ();
 
@@ -3567,8 +3583,28 @@ NUM_ACTIONS
 a˘i⁄Levñs
 )
 
-73 autÿ
-isE«bÀd
+70 i‡(
+ödiv
+.
+íîgy
+ > 0) {
+
+71 
+ödiv
+.
+íîgy
+ -= 1;
+
+73 
+	gödiv
+.
+	gÆive
+ = 
+Ál£
+;
+
+79 autÿ
+	gisE«bÀd
  = [](
 A˘i⁄
  
@@ -3577,7 +3613,7 @@ a˘i⁄
 NUM_ACTIONS
 ; };
 
-78 i‡(
+84 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3585,7 +3621,7 @@ A˘i⁄
 SET_RESPONSIVENESS
 )) {
 
-79 
+85 
 Àvñ
  = 
 a˘i⁄Levñs
@@ -3595,7 +3631,7 @@ A˘i⁄
 SET_RESPONSIVENESS
 ];
 
-80 
+86 
 	gÀvñ
  = (
 °d
@@ -3605,7 +3641,7 @@ SET_RESPONSIVENESS
 Àvñ
 ) + 1.0) / 2.0;
 
-81 
+87 
 	gödiv
 .
 	gª•⁄sivíess
@@ -3613,7 +3649,7 @@ SET_RESPONSIVENESS
 Àvñ
 ;
 
-86 
+92 
 	gª•⁄sivíessAdju°ed
  = 
 ª•⁄£Curve
@@ -3623,7 +3659,7 @@ SET_RESPONSIVENESS
 ª•⁄sivíess
 );
 
-91 i‡(
+97 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3631,7 +3667,7 @@ A˘i⁄
 SET_OSCILLATOR_PERIOD
 )) {
 
-92 autÿ
+98 autÿ
 ≥riodf
  = 
 a˘i⁄Levñs
@@ -3641,7 +3677,7 @@ A˘i⁄
 SET_OSCILLATOR_PERIOD
 ];
 
-93 
+99 
 	g√wPîiodf01
  = (
 °d
@@ -3651,7 +3687,7 @@ SET_OSCILLATOR_PERIOD
 ≥riodf
 ) + 1.0) / 2.0;
 
-94 
+100 
 	g√wPîiod
  = 1 + ()(1.5 + 
 °d
@@ -3661,13 +3697,13 @@ exp
 √wPîiodf01
 ));
 
-95 
+101 
 as£π
 (
 √wPîiod
  >= 2 &&ÇewPeriod <= 2048);
 
-96 
+102 
 	gödiv
 .
 	goscPîiod
@@ -3675,7 +3711,7 @@ as£π
 √wPîiod
 ;
 
-102 i‡(
+108 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3683,13 +3719,13 @@ A˘i⁄
 SET_LONGPROBE_DIST
 )) {
 
-103 
+109 
 c⁄°ex¥
  
 maxL⁄gProbeDi°™˚
  = 32;
 
-104 
+110 
 	gÀvñ
  = 
 a˘i⁄Levñs
@@ -3697,7 +3733,7 @@ a˘i⁄Levñs
 SET_LONGPROBE_DIST
 ];
 
-105 
+111 
 	gÀvñ
  = (
 °d
@@ -3707,7 +3743,7 @@ SET_LONGPROBE_DIST
 Àvñ
 ) + 1.0) / 2.0;
 
-106 
+112 
 	gÀvñ
  = 1 + 
 Àvñ
@@ -3715,7 +3751,7 @@ SET_LONGPROBE_DIST
 maxL⁄gProbeDi°™˚
 ;
 
-107 
+113 
 	gödiv
 .
 	gl⁄gProbeDi°
@@ -3723,7 +3759,7 @@ maxL⁄gProbeDi°™˚
 Àvñ
 ;
 
-115 i‡(
+121 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3731,13 +3767,13 @@ A˘i⁄
 EMIT_SIGNAL0
 )) {
 
-116 
+122 
 c⁄°ex¥
  
 emôThªshﬁd
  = 0.5;
 
-117 
+123 
 	gÀvñ
  = 
 a˘i⁄Levñs
@@ -3747,7 +3783,7 @@ A˘i⁄
 EMIT_SIGNAL0
 ];
 
-118 
+124 
 	gÀvñ
  = (
 °d
@@ -3757,13 +3793,13 @@ EMIT_SIGNAL0
 Àvñ
 ) + 1.0) / 2.0;
 
-119 
+125 
 	gÀvñ
  *
 ª•⁄sivíessAdju°ed
 ;
 
-120 i‡(
+126 i‡(
 	gÀvñ
  > 
 	gemôThªshﬁd
@@ -3773,7 +3809,7 @@ EMIT_SIGNAL0
 Àvñ
 )) {
 
-121 
+127 
 	gsig«ls
 .
 ö¸emít
@@ -3783,7 +3819,7 @@ EMIT_SIGNAL0
 loc
 );
 
-128 i‡(
+134 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3795,13 +3831,13 @@ p
 kûlE«bÀ
 ) {
 
-129 
+135 
 c⁄°ex¥
  
 kûlThªshﬁd
  = 0.5;
 
-130 
+136 
 	gÀvñ
  = 
 a˘i⁄Levñs
@@ -3811,7 +3847,7 @@ A˘i⁄
 KILL_FORWARD
 ];
 
-131 
+137 
 	gÀvñ
  = (
 °d
@@ -3821,13 +3857,13 @@ KILL_FORWARD
 Àvñ
 ) + 1.0) / 2.0;
 
-132 
+138 
 	gÀvñ
  *
 ª•⁄sivíessAdju°ed
 ;
 
-133 i‡(
+139 i‡(
 	gÀvñ
  > 
 	gkûlThªshﬁd
@@ -3841,7 +3877,7 @@ ACTION_MIN
 ACTION_RANGE
 )) {
 
-134 
+140 
 Co‹d
  
 	gŸhîLoc
@@ -3853,7 +3889,7 @@ loc
 œ°MoveDú
 ;
 
-135 i‡(
+141 i‡(
 	ggrid
 .
 isInBounds
@@ -3863,7 +3899,7 @@ isInBounds
 isOccupõdAt
 (otherLoc)) {
 
-136 
+142 
 	gIndiv
  &
 	gödiv2
@@ -3875,13 +3911,13 @@ gëIndiv
 ŸhîLoc
 );
 
-137 i‡(
+143 i‡(
 	gödiv2
 .
 	gÆive
 ) {
 
-138 
+144 
 as£π
 ((
 ödiv
@@ -3893,7 +3929,7 @@ loc
 Àngth
 () == 1);
 
-139 
+145 
 	g≥ïs
 .
 queueF‹Dóth
@@ -3901,17 +3937,17 @@ queueF‹Dóth
 ödiv2
 );
 
-163 
+169 
 	gÀvñ
 ;
 
-164 
+170 
 Co‹d
  
 	goff£t
 ;
 
-165 
+171 
 Co‹d
  
 	gœ°MoveOff£t
@@ -3923,7 +3959,7 @@ Co‹d
 asN‹mÆizedCo‹d
 ();
 
-169 
+175 
 	gmoveX
  = 
 isE«bÀd
@@ -3935,7 +3971,7 @@ MOVE_X
 a˘i⁄Levñs
 [Action::MOVE_X] : 0.0;
 
-170 
+176 
 	gmoveY
  = 
 isE«bÀd
@@ -3947,7 +3983,7 @@ MOVE_Y
 a˘i⁄Levñs
 [Action::MOVE_Y] : 0.0;
 
-172 i‡(
+178 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3959,7 +3995,7 @@ moveX
 a˘i⁄Levñs
 [Action::MOVE_EAST];
 
-173 i‡(
+179 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3971,7 +4007,7 @@ moveX
 a˘i⁄Levñs
 [Action::MOVE_WEST];
 
-174 i‡(
+180 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3983,7 +4019,7 @@ moveY
 a˘i⁄Levñs
 [Action::MOVE_NORTH];
 
-175 i‡(
+181 i‡(
 isE«bÀd
 (
 A˘i⁄
@@ -3995,65 +4031,27 @@ moveY
 a˘i⁄Levñs
 [Action::MOVE_SOUTH];
 
-177 i‡(
+183 i‡(
 isE«bÀd
 (
 A˘i⁄
 ::
 MOVE_FORWARD
 )) {
-
-178 
-Àvñ
- = 
-a˘i⁄Levñs
-[
-A˘i⁄
-::
-MOVE_FORWARD
-];
-
-179 
-	gmoveX
- +
-œ°MoveOff£t
-.
-x
- * 
-Àvñ
-;
-
-180 
-	gmoveY
- +
-œ°MoveOff£t
-.
-y
- * 
-Àvñ
-;
-
-182 i‡(
-isE«bÀd
-(
-A˘i⁄
-::
-MOVE_REVERSE
-)) {
-
-183 
-Àvñ
- = 
-a˘i⁄Levñs
-[
-A˘i⁄
-::
-MOVE_REVERSE
-];
 
 184 
+Àvñ
+ = 
+a˘i⁄Levñs
+[
+A˘i⁄
+::
+MOVE_FORWARD
+];
+
+185 
 	gmoveX
- -
+ +
 œ°MoveOff£t
 .
 x
@@ -4061,9 +4059,9 @@ x
 Àvñ
 ;
 
-185 
+186 
 	gmoveY
- -
+ +
 œ°MoveOff£t
 .
 y
@@ -4071,40 +4069,28 @@ y
 Àvñ
 ;
 
-187 i‡(
+188 i‡(
 isE«bÀd
 (
 A˘i⁄
 ::
-MOVE_LEFT
+MOVE_REVERSE
 )) {
 
-188 
+189 
 Àvñ
  = 
 a˘i⁄Levñs
 [
 A˘i⁄
 ::
-MOVE_LEFT
+MOVE_REVERSE
 ];
-
-189 
-	goff£t
- = 
-ödiv
-.
-œ°MoveDú
-.
-rŸ©e90DegCCW
-().
-asN‹mÆizedCo‹d
-();
 
 190 
 	gmoveX
- +
-off£t
+ -
+œ°MoveOff£t
 .
 x
  * 
@@ -4113,8 +4099,8 @@ x
 
 191 
 	gmoveY
- +
-off£t
+ -
+œ°MoveOff£t
 .
 y
  * 
@@ -4126,7 +4112,7 @@ isE«bÀd
 (
 A˘i⁄
 ::
-MOVE_RIGHT
+MOVE_LEFT
 )) {
 
 194 
@@ -4136,7 +4122,7 @@ a˘i⁄Levñs
 [
 A˘i⁄
 ::
-MOVE_RIGHT
+MOVE_LEFT
 ];
 
 195 
@@ -4146,7 +4132,7 @@ MOVE_RIGHT
 .
 œ°MoveDú
 .
-rŸ©e90DegCW
+rŸ©e90DegCCW
 ().
 asN‹mÆizedCo‹d
 ();
@@ -4176,7 +4162,7 @@ isE«bÀd
 (
 A˘i⁄
 ::
-MOVE_RL
+MOVE_RIGHT
 )) {
 
 200 
@@ -4186,7 +4172,7 @@ a˘i⁄Levñs
 [
 A˘i⁄
 ::
-MOVE_RL
+MOVE_RIGHT
 ];
 
 201 
@@ -4221,35 +4207,37 @@ y
 Àvñ
 ;
 
-206 i‡(
+205 i‡(
 isE«bÀd
 (
 A˘i⁄
 ::
-MOVE_RANDOM
+MOVE_RL
 )) {
 
-207 
+206 
 Àvñ
  = 
 a˘i⁄Levñs
 [
 A˘i⁄
 ::
-MOVE_RANDOM
+MOVE_RL
 ];
 
-208 
+207 
 	goff£t
  = 
-Dú
-::
-øndom8
+ödiv
+.
+œ°MoveDú
+.
+rŸ©e90DegCW
 ().
 asN‹mÆizedCo‹d
 ();
 
-209 
+208 
 	gmoveX
  +
 off£t
@@ -4259,7 +4247,7 @@ x
 Àvñ
 ;
 
-210 
+209 
 	gmoveY
  +
 off£t
@@ -4269,7 +4257,55 @@ y
 Àvñ
 ;
 
+212 i‡(
+isE«bÀd
+(
+A˘i⁄
+::
+MOVE_RANDOM
+)) {
+
+213 
+Àvñ
+ = 
+a˘i⁄Levñs
+[
+A˘i⁄
+::
+MOVE_RANDOM
+];
+
+214 
+	goff£t
+ = 
+Dú
+::
+øndom8
+().
+asN‹mÆizedCo‹d
+();
+
 215 
+	gmoveX
+ +
+off£t
+.
+x
+ * 
+Àvñ
+;
+
+216 
+	gmoveY
+ +
+off£t
+.
+y
+ * 
+Àvñ
+;
+
+221 
 	gmoveX
  = 
 °d
@@ -4279,7 +4315,7 @@ y
 moveX
 );
 
-216 
+222 
 	gmoveY
  = 
 °d
@@ -4289,19 +4325,19 @@ moveX
 moveY
 );
 
-217 
+223 
 	gmoveX
  *
 ª•⁄sivíessAdju°ed
 ;
 
-218 
+224 
 	gmoveY
  *
 ª•⁄sivíessAdju°ed
 ;
 
-221 
+227 
 öt16_t
  
 	g¥obX
@@ -4315,7 +4351,7 @@ abs
 moveX
 ));
 
-222 
+228 
 öt16_t
  
 	g¥obY
@@ -4329,7 +4365,7 @@ abs
 moveY
 ));
 
-225 
+231 
 öt16_t
  
 	gsignumX
@@ -4337,7 +4373,7 @@ moveY
 moveX
  < 0.0 ? -1 : 1;
 
-226 
+232 
 öt16_t
  
 	gsignumY
@@ -4345,7 +4381,7 @@ moveX
 moveY
  < 0.0 ? -1 : 1;
 
-229 
+235 
 Co‹d
  
 	gmovemítOff£t
@@ -4361,7 +4397,7 @@ signumX
 signumY
 ) };
 
-232 
+238 
 Co‹d
  
 	g√wLoc
@@ -4373,23 +4409,85 @@ loc
 movemítOff£t
 ;
 
-233 i‡(
+239 i‡(
 	ggrid
 .
 isInBounds
 (
 √wLoc
-Ë&& grid.
-isEm±yAt
-(newLoc)) {
+Ë&& 
+	gödiv
+.
+	gíîgy
+ >
+p
+.
+movemítE√rgyCo°
 
-234 
-	g≥ïs
+
+240 && (
+grid
+.
+isEm±yAt
+(
+√wLoc
+Ë|| grid.
+isFoodAt
+(newLoc))) {
+
+241 
+≥ïs
 .
 queueF‹Move
 (
 ödiv
 , 
+√wLoc
+);
+
+243 
+	gödiv
+.
+	gíîgy
+ -
+p
+.
+movemítE√rgyCo°
+;
+
+246 i‡(
+	ggrid
+.
+isFoodAt
+(
+√wLoc
+)) {
+
+247 
+	gödiv
+.
+	gíîgy
+ +
+p
+.
+íîgyPîFoodUnô
+;
+
+248 
+	ggrid
+.
+£t
+(
+√wLoc
+, 
+EMPTY
+);
+
+249 
+	ggrid
+.
+ªmoveFoodLoˇti⁄
+(
 √wLoc
 );
 
@@ -7505,7 +7603,169 @@ cou¡Rev
 	g£ns‹VÆ
 ;
 
-88 
+90 
+gëSh‹tProbeFoodDi°™˚
+(
+Co‹d
+ 
+loc0
+, 
+Dú
+ 
+dú
+, 
+¥obeDi°™˚
+)
+
+92 
+	gcou¡Fwd
+ = 0;
+
+93 
+	gcou¡Rev
+ = 0;
+
+94 
+Co‹d
+ 
+	gloc
+ = 
+loc0
+ + 
+dú
+;
+
+95 
+	gnumLocsToTe°
+ = 
+¥obeDi°™˚
+;
+
+97 
+	gnumLocsToTe°
+ > 0 && 
+	ggrid
+.
+isInBounds
+(
+loc
+Ë&& !grid.
+isFoodAt
+(loc)) {
+
+98 ++
+	gcou¡Fwd
+;
+
+99 
+	gloc
+ = 
+loc
+ + 
+dú
+;
+
+100 --
+	gnumLocsToTe°
+;
+
+102 i‡(
+	gnumLocsToTe°
+ > 0 && !
+	ggrid
+.
+isInBounds
+(
+loc
+)) {
+
+103 
+	gcou¡Fwd
+ = 
+¥obeDi°™˚
+;
+
+106 
+	gnumLocsToTe°
+ = 
+¥obeDi°™˚
+;
+
+107 
+	gloc
+ = 
+loc0
+ - 
+dú
+;
+
+108 
+	gnumLocsToTe°
+ > 0 && 
+	ggrid
+.
+isInBounds
+(
+loc
+Ë&& !grid.
+isFoodAt
+(loc)) {
+
+109 ++
+	gcou¡Rev
+;
+
+110 
+	gloc
+ = 
+loc
+ - 
+dú
+;
+
+111 --
+	gnumLocsToTe°
+;
+
+113 i‡(
+	gnumLocsToTe°
+ > 0 && !
+	ggrid
+.
+isInBounds
+(
+loc
+)) {
+
+114 
+	gcou¡Rev
+ = 
+¥obeDi°™˚
+;
+
+117 
+	g£ns‹VÆ
+ = ((
+cou¡Fwd
+ - 
+cou¡Rev
+Ë+ 
+¥obeDi°™˚
+);
+
+118 
+	g£ns‹VÆ
+ = (
+£ns‹VÆ
+ / 2.0Ë/ 
+¥obeDi°™˚
+;
+
+119  
+	g£ns‹VÆ
+;
+
+122 
 gëSig«lDísôy
 (
 œyîNum
@@ -7515,15 +7775,15 @@ Co‹d
 loc
 )
 
-93 
+127 
 	gcou¡Locs
  = 0;
 
-94 
+128 
 	gsum
  = 0;
 
-95 
+129 
 Co‹d
  
 	g˚¡î
@@ -7531,7 +7791,7 @@ Co‹d
 loc
 ;
 
-97 autÿ
+131 autÿ
 	gf
  = [&](
 Co‹d
@@ -7539,11 +7799,11 @@ Co‹d
 éoc
 ) {
 
-98 ++
+132 ++
 cou¡Locs
 ;
 
-99 
+133 
 	gsum
  +
 sig«ls
@@ -7555,7 +7815,7 @@ gëMagnôude
 éoc
 );
 
-102 
+136 
 visôNeighb‹hood
 (
 ˚¡î
@@ -7567,7 +7827,7 @@ sig«lSís‹Radius
 f
 );
 
-103 
+137 
 	gmaxSum
  = ()
 cou¡Locs
@@ -7575,7 +7835,7 @@ cou¡Locs
 SIGNAL_MAX
 ;
 
-104 
+138 
 	g£ns‹VÆ
  = 
 sum
@@ -7583,11 +7843,11 @@ sum
 maxSum
 ;
 
-106  
+140  
 	g£ns‹VÆ
 ;
 
-110 
+144 
 gëSig«lDísôyAl⁄gAxis
 (
 œyîNum
@@ -7601,7 +7861,7 @@ Dú
 dú
 )
 
-120 
+154 
 as£π
 (
 dú
@@ -7611,11 +7871,11 @@ Com∑ss
 CENTER
 );
 
-122 
+156 
 	gsum
  = 0.0;
 
-123 
+157 
 Co‹d
  
 	gdúVec
@@ -7625,7 +7885,7 @@ dú
 asN‹mÆizedCo‹d
 ();
 
-124 
+158 
 	gÀn
  = 
 °d
@@ -7639,7 +7899,7 @@ x
 y
  * dirVec.y);
 
-125 
+159 
 	gdúVecX
  = 
 dúVec
@@ -7649,7 +7909,7 @@ x
 Àn
 ;
 
-126 
+160 
 	gdúVecY
  = 
 dúVec
@@ -7659,7 +7919,7 @@ y
 Àn
 ;
 
-128 autÿ
+162 autÿ
 	gf
  = [&](
 Co‹d
@@ -7667,13 +7927,13 @@ Co‹d
 éoc
 ) {
 
-129 i‡(
+163 i‡(
 éoc
  !
 loc
 ) {
 
-130 
+164 
 Co‹d
  
 off£t
@@ -7683,7 +7943,7 @@ off£t
 loc
 ;
 
-131 
+165 
 	g¥oj
  = (
 dúVecX
@@ -7697,7 +7957,7 @@ dúVecY
 y
 );
 
-132 
+166 
 	gc⁄åib
  = (
 ¥oj
@@ -7711,7 +7971,7 @@ gëMagnôude
 loc
 )) /
 
-133 (
+167 (
 	goff£t
 .
 x
@@ -7723,13 +7983,13 @@ y
 	gy
 );
 
-134 
+168 
 	gsum
  +
 c⁄åib
 ;
 
-138 
+172 
 visôNeighb‹hood
 (
 loc
@@ -7741,7 +8001,7 @@ p›uœti⁄Sís‹Radius
 f
 );
 
-140 
+174 
 	gmaxSumMag
  = 6.0 * 
 p
@@ -7751,7 +8011,7 @@ sig«lSís‹Radius
 SIGNAL_MAX
 ;
 
-141 
+175 
 as£π
 (
 sum
@@ -7759,7 +8019,7 @@ sum
 maxSumMag
  && sum <= maxSumMag);
 
-142 
+176 
 	g£ns‹VÆ
  = 
 sum
@@ -7767,17 +8027,17 @@ sum
 maxSumMag
 ;
 
-143 
+177 
 	g£ns‹VÆ
  = (
 £ns‹VÆ
  + 1.0) / 2.0;
 
-145  
+179  
 	g£ns‹VÆ
 ;
 
-153 
+187 
 l⁄gProbeP›uœti⁄Fwd
 (
 Co‹d
@@ -7791,17 +8051,17 @@ dú
 l⁄gProbeDi°
 )
 
-155 
+189 
 as£π
 (
 l⁄gProbeDi°
  > 0);
 
-156 
+190 
 	gcou¡
  = 0;
 
-157 
+191 
 	gloc
  = 
 loc
@@ -7809,13 +8069,13 @@ loc
 dú
 ;
 
-158 
+192 
 	gnumLocsToTe°
  = 
 l⁄gProbeDi°
 ;
 
-159 
+193 
 	gnumLocsToTe°
  > 0 && 
 	ggrid
@@ -7827,11 +8087,11 @@ loc
 isEm±yAt
 (loc)) {
 
-160 ++
+194 ++
 	gcou¡
 ;
 
-161 
+195 
 	gloc
  = 
 loc
@@ -7839,11 +8099,11 @@ loc
 dú
 ;
 
-162 --
+196 --
 	gnumLocsToTe°
 ;
 
-164 i‡(
+198 i‡(
 	gnumLocsToTe°
  > 0 && (!
 	ggrid
@@ -7855,15 +8115,15 @@ loc
 isB¨rõrAt
 (loc))) {
 
-165  
+199  
 	gl⁄gProbeDi°
 ;
 
-167  
+201  
 	gcou¡
 ;
 
-177 
+211 
 l⁄gProbeB¨rõrFwd
 (
 Co‹d
@@ -7877,17 +8137,17 @@ dú
 l⁄gProbeDi°
 )
 
-179 
+213 
 as£π
 (
 l⁄gProbeDi°
  > 0);
 
-180 
+214 
 	gcou¡
  = 0;
 
-181 
+215 
 	gloc
  = 
 loc
@@ -7895,13 +8155,13 @@ loc
 dú
 ;
 
-182 
+216 
 	gnumLocsToTe°
  = 
 l⁄gProbeDi°
 ;
 
-183 
+217 
 	gnumLocsToTe°
  > 0 && 
 	ggrid
@@ -7913,11 +8173,11 @@ loc
 isB¨rõrAt
 (loc)) {
 
-184 ++
+218 ++
 	gcou¡
 ;
 
-185 
+219 
 	gloc
  = 
 loc
@@ -7925,11 +8185,11 @@ loc
 dú
 ;
 
-186 --
+220 --
 	gnumLocsToTe°
 ;
 
-188 i‡(
+222 i‡(
 	gnumLocsToTe°
  > 0 && !
 	ggrid
@@ -7939,15 +8199,15 @@ isInBounds
 loc
 )) {
 
-189  
+223  
 	gl⁄gProbeDi°
 ;
 
-191  
+225  
 	gcou¡
 ;
 
-197 
+231 
 	gIndiv
 ::
 gëSís‹
@@ -7959,21 +8219,21 @@ Sís‹
 simSãp
 ) const
 
-199 
+233 
 	g£ns‹VÆ
  = 0.0;
 
-201 
+235 
 	g£ns‹Num
 ) {
 
-202 
+236 
 	gSís‹
 ::
 AGE
 :
 
-205 
+239 
 £ns‹VÆ
  = ()
 age
@@ -7983,13 +8243,13 @@ p
 °ïsPîGíî©i⁄
 ;
 
-207 
+241 
 	gSís‹
 ::
 BOUNDARY_DIST
 :
 
-212 
+246 
 di°X
  = 
 °d
@@ -8009,7 +8269,7 @@ x
 	gx
 ) - 1);
 
-213 
+247 
 	gdi°Y
  = 
 °d
@@ -8029,7 +8289,7 @@ y
 	gy
 ) - 1);
 
-214 
+248 
 	g˛o£°
  = 
 °d
@@ -8041,7 +8301,7 @@ di°X
 	gdi°Y
 );
 
-215 
+249 
 	gmaxPossibÀ
  = 
 °d
@@ -8057,7 +8317,7 @@ sizeX
 	gsizeY
  / 2 - 1);
 
-216 
+250 
 	g£ns‹VÆ
  = ()
 ˛o£°
@@ -8065,13 +8325,13 @@ sizeX
 maxPossibÀ
 ;
 
-219 
+253 
 	gSís‹
 ::
 BOUNDARY_DIST_X
 :
 
-223 
+257 
 möDi°X
  = 
 °d
@@ -8091,7 +8351,7 @@ x
 	gx
 ) - 1);
 
-224 
+258 
 	g£ns‹VÆ
  = 
 möDi°X
@@ -8101,13 +8361,13 @@ p
 sizeX
  / 2.0);
 
-227 
+261 
 	gSís‹
 ::
 BOUNDARY_DIST_Y
 :
 
-231 
+265 
 möDi°Y
  = 
 °d
@@ -8127,7 +8387,7 @@ y
 	gy
 ) - 1);
 
-232 
+266 
 	g£ns‹VÆ
  = 
 möDi°Y
@@ -8137,13 +8397,13 @@ p
 sizeY
  / 2.0);
 
-235 
+269 
 	gSís‹
 ::
 LAST_MOVE_DIR_X
 :
 
-238 autÿ
+272 autÿ
 œ°X
  = 
 œ°MoveDú
@@ -8153,23 +8413,23 @@ asN‹mÆizedCo‹d
 x
 ;
 
-239 
+273 
 	g£ns‹VÆ
  = 
 œ°X
  == 0 ? 0.5 :
 
-240 (
+274 (
 œ°X
  == -1 ? 0.0 : 1.0);
 
-243 
+277 
 	gSís‹
 ::
 LAST_MOVE_DIR_Y
 :
 
-246 autÿ
+280 autÿ
 œ°Y
  = 
 œ°MoveDú
@@ -8179,23 +8439,23 @@ asN‹mÆizedCo‹d
 y
 ;
 
-247 
+281 
 	g£ns‹VÆ
  = 
 œ°Y
  == 0 ? 0.5 :
 
-248 (
+282 (
 œ°Y
  == -1 ? 0.0 : 1.0);
 
-251 
+285 
 	gSís‹
 ::
 LOC_X
 :
 
-253 
+287 
 £ns‹VÆ
  = ()
 loc
@@ -8207,13 +8467,13 @@ p
 sizeX
  - 1);
 
-255 
+289 
 	gSís‹
 ::
 LOC_Y
 :
 
-257 
+291 
 £ns‹VÆ
  = ()
 loc
@@ -8225,13 +8485,13 @@ p
 sizeY
  - 1);
 
-259 
+293 
 	gSís‹
 ::
 OSC1
 :
 
-263 
+297 
 pha£
  = (
 simSãp
@@ -8239,7 +8499,7 @@ simSãp
 oscPîiod
 ) / ()oscPeriod;
 
-264 
+298 
 	gÁ˘‹
  = -
 °d
@@ -8249,27 +8509,27 @@ cos
 pha£
  * 2.0f * 3.1415927f);
 
-265 
+299 
 as£π
 (
 Á˘‹
  >= -1.0f && factor <= 1.0f);
 
-266 
+300 
 	gÁ˘‹
  += 1.0f;
 
-267 
+301 
 	gÁ˘‹
  /= 2.0;
 
-268 
+302 
 	g£ns‹VÆ
  = 
 Á˘‹
 ;
 
-270 
+304 
 	g£ns‹VÆ
  = 
 °d
@@ -8281,13 +8541,13 @@ mö
 max
 <>(0.0, sensorVal));
 
-273 
+307 
 	gSís‹
 ::
 LONGPROBE_POP_FWD
 :
 
-278 
+312 
 £ns‹VÆ
  = 
 l⁄gProbeP›uœti⁄Fwd
@@ -8301,13 +8561,13 @@ l⁄gProbeDi°
 	gl⁄gProbeDi°
 ;
 
-281 
+315 
 	gSís‹
 ::
 LONGPROBE_BAR_FWD
 :
 
-286 
+320 
 £ns‹VÆ
  = 
 l⁄gProbeB¨rõrFwd
@@ -8321,21 +8581,21 @@ l⁄gProbeDi°
 	gl⁄gProbeDi°
 ;
 
-289 
+323 
 	gSís‹
 ::
 POPULATION
 :
 
-293 
+327 
 cou¡Locs
  = 0;
 
-294 
+328 
 	gcou¡Occupõd
  = 0;
 
-295 
+329 
 Co‹d
  
 	g˚¡î
@@ -8343,7 +8603,7 @@ Co‹d
 loc
 ;
 
-297 autÿ
+331 autÿ
 	gf
  = [&](
 Co‹d
@@ -8351,11 +8611,11 @@ Co‹d
 éoc
 ) {
 
-298 ++
+332 ++
 cou¡Locs
 ;
 
-299 i‡(
+333 i‡(
 	ggrid
 .
 isOccupõdAt
@@ -8363,11 +8623,11 @@ isOccupõdAt
 éoc
 )) {
 
-300 ++
+334 ++
 	gcou¡Occupõd
 ;
 
-304 
+338 
 visôNeighb‹hood
 (
 ˚¡î
@@ -8379,7 +8639,7 @@ p›uœti⁄Sís‹Radius
 f
 );
 
-305 
+339 
 	g£ns‹VÆ
  = ()
 cou¡Occupõd
@@ -8387,13 +8647,13 @@ cou¡Occupõd
 cou¡Locs
 ;
 
-308 
+342 
 	gSís‹
 ::
 POPULATION_FWD
 :
 
-311 
+345 
 £ns‹VÆ
  = 
 gëP›uœti⁄DísôyAl⁄gAxis
@@ -8403,13 +8663,13 @@ loc
 œ°MoveDú
 );
 
-313 
+347 
 	gSís‹
 ::
 POPULATION_LR
 :
 
-315 
+349 
 £ns‹VÆ
  = 
 gëP›uœti⁄DísôyAl⁄gAxis
@@ -8421,13 +8681,13 @@ loc
 rŸ©e90DegCW
 ());
 
-317 
+351 
 	gSís‹
 ::
 BARRIER_FWD
 :
 
-320 
+354 
 £ns‹VÆ
  = 
 gëSh‹tProbeB¨rõrDi°™˚
@@ -8441,13 +8701,13 @@ p
 sh‹tProbeB¨rõrDi°™˚
 );
 
-322 
+356 
 	gSís‹
 ::
 BARRIER_LR
 :
 
-325 
+359 
 £ns‹VÆ
  = 
 gëSh‹tProbeB¨rõrDi°™˚
@@ -8457,19 +8717,65 @@ loc
 œ°MoveDú
 .
 rŸ©e90DegCW
-(), 
+(),
+
+360 
 p
 .
 sh‹tProbeB¨rõrDi°™˚
 );
 
-327 
+362 
+	gSís‹
+::
+FOOD_LR
+:
+
+366 
+£ns‹VÆ
+ = 
+gëSh‹tProbeFoodDi°™˚
+(
+loc
+, 
+œ°MoveDú
+.
+rŸ©e90DegCW
+(),
+
+367 
+p
+.
+sh‹tProbeFoodDi°™˚
+);
+
+370 
+	gSís‹
+::
+FOOD_FWD
+:
+
+374 
+£ns‹VÆ
+ = 
+gëSh‹tProbeFoodDi°™˚
+(
+loc
+, 
+œ°MoveDú
+, 
+p
+.
+sh‹tProbeFoodDi°™˚
+);
+
+377 
 	gSís‹
 ::
 RANDOM
 :
 
-329 
+379 
 £ns‹VÆ
  = 
 øndomUöt
@@ -8477,13 +8783,13 @@ RANDOM
 UINT_MAX
 ;
 
-331 
+381 
 	gSís‹
 ::
 SIGNAL0
 :
 
-334 
+384 
 £ns‹VÆ
  = 
 gëSig«lDísôy
@@ -8491,13 +8797,13 @@ gëSig«lDísôy
 loc
 );
 
-336 
+386 
 	gSís‹
 ::
 SIGNAL0_FWD
 :
 
-338 
+388 
 £ns‹VÆ
  = 
 gëSig«lDísôyAl⁄gAxis
@@ -8507,13 +8813,13 @@ loc
 œ°MoveDú
 );
 
-340 
+390 
 	gSís‹
 ::
 SIGNAL0_LR
 :
 
-342 
+392 
 £ns‹VÆ
  = 
 gëSig«lDísôyAl⁄gAxis
@@ -8525,13 +8831,13 @@ loc
 rŸ©e90DegCW
 ());
 
-344 
+394 
 	gSís‹
 ::
 GENETIC_SIM_FWD
 :
 
-348 
+398 
 Co‹d
  
 loc2
@@ -8541,7 +8847,7 @@ loc
 œ°MoveDú
 ;
 
-349 i‡(
+399 i‡(
 	ggrid
 .
 isInBounds
@@ -8551,7 +8857,7 @@ loc2
 isOccupõdAt
 (loc2)) {
 
-350 c⁄° 
+400 c⁄° 
 	gIndiv
  &
 	gödiv2
@@ -8563,13 +8869,13 @@ gëIndiv
 loc2
 );
 
-351 i‡(
+401 i‡(
 	gödiv2
 .
 	gÆive
 ) {
 
-352 
+402 
 	g£ns‹VÆ
  = 
 gíomeSimû¨ôy
@@ -8579,13 +8885,13 @@ gíome
 ödiv2
 .genome);
 
-358 
+408 
 as£π
 (
 Ál£
 );
 
-362 i‡(
+412 i‡(
 	g°d
 ::
 i¢™
@@ -8593,7 +8899,7 @@ i¢™
 £ns‹VÆ
 ) || sensorVal < -0.01 || sensorVal > 1.01) {
 
-363 
+413 
 °d
 ::
 cout
@@ -8609,7 +8915,7 @@ Sís‹
 ídl
 ;
 
-364 
+414 
 	g£ns‹VÆ
  = 
 °d
@@ -8621,7 +8927,7 @@ mö
 £ns‹VÆ
 , 1.0f));
 
-367 
+417 
 as£π
 (!
 °d
@@ -8631,7 +8937,7 @@ i¢™
 £ns‹VÆ
 ) && sensorVal >= -0.01 && sensorVal <= 1.01);
 
-369  
+419  
 	g£ns‹VÆ
 ;
 
@@ -8751,7 +9057,125 @@ loc
 	gloc
 ;
 
-36 
+32 
+	gGrid
+::
+öôülizeFood
+(
+≥r˚¡ageFoodLoˇti⁄s
+)
+
+34 
+uöt32_t
+ 
+num_˚Œs
+ = 
+d©a
+.
+size
+(Ë* 
+grid
+.data[0].size();
+
+35 
+uöt32_t
+ 
+	gnum_food_˚Œs
+ = (uöt32_tË((
+≥r˚¡ageFoodLoˇti⁄s
+ * 
+num_˚Œs
+) / 100);
+
+37 
+	gfoodLoˇti⁄s
+.
+˛ór
+();
+
+39 
+	gi
+ = 0; i < 
+	gnum_food_˚Œs
+; i++) {
+
+40 
+Co‹d
+ 
+	gloc
+ = 
+födEm±yLoˇti⁄
+();
+
+41 
+£t
+(
+loc
+, 
+FOOD
+);
+
+42 
+	gfoodLoˇti⁄s
+.
+push_back
+(
+loc
+);
+
+46 
+	gGrid
+::
+ªmoveFoodLoˇti⁄
+(
+Co‹d
+ 
+loc
+)
+
+48 
+°d
+::
+ve˘‹
+<
+Co‹d
+>::
+ôî©‹
+ 
+posôi⁄
+ = std::
+föd
+(
+foodLoˇti⁄s
+.
+begö
+(),
+
+49 
+foodLoˇti⁄s
+.
+íd
+(), 
+loc
+);
+
+50 i‡(
+	gposôi⁄
+ !
+foodLoˇti⁄s
+.
+íd
+()) {
+
+51 
+foodLoˇti⁄s
+.
+îa£
+(
+posôi⁄
+);
+
+58 
 visôNeighb‹hood
 (
 Co‹d
@@ -8767,7 +9191,7 @@ fun˘i⁄
 f
 )
 
-38 
+60 
 dx
  = -
 °d
@@ -8787,7 +9211,7 @@ mö
 	gsizeX
  -Üoc.x) - 1); ++dx) {
 
-39 
+61 
 öt16_t
  
 	gx
@@ -8799,7 +9223,7 @@ x
 dx
 ;
 
-40 
+62 
 as£π
 (
 x
@@ -8809,7 +9233,7 @@ p
 sizeX
 );
 
-41 
+63 
 	gexã¡Y
  = ()
 sqπ
@@ -8819,7 +9243,7 @@ sqπ
 dx
  * dx);
 
-42 
+64 
 	gdy
  = -
 °d
@@ -8837,7 +9261,7 @@ exã¡Y
 	gsizeY
  -Üoc.y) - 1); ++dy) {
 
-43 
+65 
 öt16_t
  
 	gy
@@ -8849,7 +9273,7 @@ y
 dy
 ;
 
-44 
+66 
 as£π
 (
 y
@@ -8859,7 +9283,7 @@ p
 sizeY
 );
 
-45 
+67 
 f
 –
 Co‹d
@@ -8912,22 +9336,28 @@ uöt16_t
 22 c⁄° 
 uöt16_t
  
+	gFOOD
+ = 0xfffe;
+
+23 c⁄° 
+uöt16_t
+ 
 	gBARRIER
  = 0xffff;
 
-24 ˛as†
+25 ˛as†
 	cGrid
  {
 
-25 
+26 
 	gpublic
 :
 
-28 
+29 
 	sCﬁumn
  {
 
-29 
+30 
 Cﬁumn
 (
 uöt16_t
@@ -8941,7 +9371,7 @@ d©a
 ve˘‹
 <uint16_t>(numRows, 0) } { }
 
-30 
+31 
 zîoFûl
 (Ë{ 
 	g°d
@@ -8955,7 +9385,7 @@ begö
 íd
 (), 0); }
 
-31 
+32 
 	guöt16_t
 & 
 	g›î©‹
@@ -8969,7 +9399,7 @@ uöt16_t
 rowNum
 ]; }
 
-32 
+33 
 uöt16_t
  
 	g›î©‹
@@ -8981,7 +9411,7 @@ uöt16_t
 rowNum
 ]; }
 
-33 
+34 
 size_t
  
 size
@@ -8989,11 +9419,11 @@ size
 	gd©a
 .size(); }
 
-34 
+35 
 	g¥iv©e
 :
 
-35 
+36 
 °d
 ::
 ve˘‹
@@ -9003,7 +9433,7 @@ uöt16_t
 d©a
 ;
 
-38 
+39 
 öô
 (
 uöt16_t
@@ -9013,7 +9443,7 @@ sizeX
 sizeY
 );
 
-39 
+40 
 zîoFûl
 (Ë{ 
 	gCﬁumn
@@ -9025,7 +9455,7 @@ d©a
 cﬁumn
 .zeroFill(); }
 
-40 
+41 
 uöt16_t
  
 sizeX
@@ -9035,7 +9465,7 @@ sizeX
 size
 (); }
 
-41 
+42 
 uöt16_t
  
 sizeY
@@ -9045,7 +9475,7 @@ sizeY
 size
 (); }
 
-42 
+43 
 boﬁ
  
 isInBounds
@@ -9067,7 +9497,7 @@ y
 sizeY
 (); }
 
-43 
+44 
 boﬁ
  
 isEm±yAt
@@ -9081,7 +9511,21 @@ loc
 EMPTY
 ; }
 
-44 
+45 
+boﬁ
+ 
+isFoodAt
+(
+Co‹d
+ 
+loc
+Ëc⁄° {  
+©
+÷ocË=
+FOOD
+; }
+
+46 
 boﬁ
  
 isB¨rõrAt
@@ -9095,7 +9539,7 @@ loc
 BARRIER
 ; }
 
-46 
+48 
 boﬁ
  
 isOccupõdAt
@@ -9109,9 +9553,11 @@ loc
 EMPTY
  &&át÷ocË!
 BARRIER
+ &&át÷ocË!
+FOOD
 ; }
 
-47 
+49 
 boﬁ
  
 isB‹dî
@@ -9133,7 +9579,7 @@ y
 sizeY
 () - 1; }
 
-48 
+50 
 uöt16_t
  
 ©
@@ -9149,7 +9595,7 @@ x
 y
 ]; };
 
-49 
+51 
 uöt16_t
  
 ©
@@ -9161,7 +9607,7 @@ y
 	gd©a
 [x][y]; }
 
-51 
+52 
 £t
 (
 Co‹d
@@ -9179,7 +9625,7 @@ x
 y
 ] = val; }
 
-52 
+53 
 £t
 (
 uöt16_t
@@ -9193,19 +9639,25 @@ vÆ
 	gd©a
 [x][y] = val; }
 
-53 
+54 
 Co‹d
  
 födEm±yLoˇti⁄
 () const;
 
-54 
+55 
+öôülizeFood
+(
+≥r˚¡ageFoodLoˇti⁄s
+);
+
+56 
 ¸óãB¨rõr
 (
 b¨rõrTy≥
 );
 
-55 c⁄° 
+57 c⁄° 
 	g°d
 ::
 ve˘‹
@@ -9217,7 +9669,7 @@ gëB¨rõrLoˇti⁄s
 b¨rõrLoˇti⁄s
 ; }
 
-56 c⁄° 
+58 c⁄° 
 	g°d
 ::
 ve˘‹
@@ -9229,7 +9681,27 @@ gëB¨rõrCíãrs
 b¨rõrCíãrs
 ; }
 
-58 
+59 c⁄° 
+	g°d
+::
+ve˘‹
+<
+Co‹d
+> &
+gëFoodLoˇti⁄s
+(Ëc⁄° {  
+foodLoˇti⁄s
+; }
+
+60 
+ªmoveFoodLoˇti⁄
+(
+Co‹d
+ 
+loc
+);
+
+62 
 	gCﬁumn
  & 
 	g›î©‹
@@ -9243,7 +9715,7 @@ uöt16_t
 cﬁumnXNum
 ]; }
 
-59 c⁄° 
+63 c⁄° 
 	gCﬁumn
  & 
 	g›î©‹
@@ -9257,11 +9729,11 @@ uöt16_t
 cﬁumnXNum
 ]; }
 
-60 
+64 
 	g¥iv©e
 :
 
-61 
+65 
 °d
 ::
 ve˘‹
@@ -9271,7 +9743,7 @@ Cﬁumn
 d©a
 ;
 
-62 
+66 
 	g°d
 ::
 ve˘‹
@@ -9281,7 +9753,7 @@ Co‹d
 b¨rõrLoˇti⁄s
 ;
 
-63 
+67 
 	g°d
 ::
 ve˘‹
@@ -9291,7 +9763,17 @@ Co‹d
 b¨rõrCíãrs
 ;
 
-66 
+68 
+	g°d
+::
+ve˘‹
+<
+Co‹d
+> 
+foodLoˇti⁄s
+;
+
+71 
 visôNeighb‹hood
 (
 Co‹d
@@ -9307,7 +9789,7 @@ fun˘i⁄
 f
 );
 
-67 
+72 
 unôTe°GridVisôNeighb‹hood
 ();
 
@@ -9509,7 +9991,67 @@ y
 cﬁ‹
 ,
 
+47 
+Co‹d
+ 
+	gloc
+ : 
+d©a
+.
+foodLocs
+) {
+
 49 
+cﬁ‹
+[0] = 0;
+
+50 
+	gcﬁ‹
+[1] = 0;
+
+51 
+	gcﬁ‹
+[2] = 0;
+
+53 
+	gimage
+.
+døw_cú˛e
+(
+
+54 
+loc
+.
+x
+ * 
+p
+.
+di•œySˇÀ
+,
+
+55 ((
+p
+.
+sizeY
+ - 
+loc
+.
+y
+Ë- 1Ë*Ö.
+di•œySˇÀ
+,
+
+56 
+p
+.
+agítSize
+,
+
+57 
+cﬁ‹
+,
+
+63 
 c⁄°ex¥
  
 uöt8_t
@@ -9517,7 +10059,7 @@ uöt8_t
 	gmaxCﬁ‹VÆ
  = 0xb0;
 
-50 
+64 
 c⁄°ex¥
  
 uöt8_t
@@ -9525,7 +10067,7 @@ uöt8_t
 	gmaxLumaVÆ
  = 0xb0;
 
-52 autÿ
+66 autÿ
 	grgbToLuma
  = [](
 uöt8_t
@@ -9539,7 +10081,7 @@ r
 	gr
 +r+r+b+g+g+g+g) / 8; };
 
-54 
+68 
 size_t
  
 	gi
@@ -9551,7 +10093,7 @@ size_t
 size
 (); ++i) {
 
-55 
+69 
 	gc
  = 
 d©a
@@ -9561,25 +10103,25 @@ d©a
 i
 ];
 
-56 
+70 
 	gcﬁ‹
 [0] = (
 c
 );
 
-57 
+71 
 	gcﬁ‹
 [1] = ((
 c
  & 0x1f) << 3);
 
-58 
+72 
 	gcﬁ‹
 [2] = ((
 c
  & 7) << 5);
 
-61 i‡(
+75 i‡(
 rgbToLuma
 (
 cﬁ‹
@@ -9587,7 +10129,7 @@ cﬁ‹
 	gmaxLumaVÆ
 ) {
 
-62 i‡(
+76 i‡(
 	gcﬁ‹
 [0] > 
 	gmaxCﬁ‹VÆ
@@ -9595,7 +10137,7 @@ cﬁ‹
 maxCﬁ‹VÆ
 ;
 
-63 i‡(
+77 i‡(
 	gcﬁ‹
 [1] > 
 	gmaxCﬁ‹VÆ
@@ -9603,7 +10145,7 @@ maxCﬁ‹VÆ
 maxCﬁ‹VÆ
 ;
 
-64 i‡(
+78 i‡(
 	gcﬁ‹
 [2] > 
 	gmaxCﬁ‹VÆ
@@ -9611,13 +10153,13 @@ maxCﬁ‹VÆ
 maxCﬁ‹VÆ
 ;
 
-67 
+81 
 	gimage
 .
 døw_cú˛e
 (
 
-68 
+82 
 d©a
 .
 ödivLocs
@@ -9631,7 +10173,7 @@ p
 di•œySˇÀ
 ,
 
-69 ((
+83 ((
 p
 .
 sizeY
@@ -9647,17 +10189,17 @@ y
 di•œySˇÀ
 ,
 
-70 
+84 
 p
 .
 agítSize
 ,
 
-71 
+85 
 cﬁ‹
 ,
 
-76 
+90 
 	gimageLi°
 .
 push_back
@@ -9665,13 +10207,13 @@ push_back
 image
 );
 
-83 
+97 
 	gImageWrôî
 ::
 ImageWrôî
 ()
 
-84 : 
+98 : 
 dr›≥dFømeCou¡
 {0}, 
 	gbusy
@@ -9683,33 +10225,33 @@ dr›≥dFømeCou¡
 	gÁl£
 },
 
-85 
+99 
 	gab‹tReque°ed
 {
 	gÁl£
 }
 
-87 
+101 
 °¨tNewGíî©i⁄
 ();
 
-91 
+105 
 	gImageWrôî
 ::
 °¨tNewGíî©i⁄
 ()
 
-93 
+107 
 imageLi°
 .
 ˛ór
 ();
 
-94 
+108 
 	gskù≥dFømes
  = 0;
 
-98 
+112 
 uöt8_t
  
 makeGíëicCﬁ‹
@@ -9719,13 +10261,13 @@ Gíome
 gíome
 )
 
-100  ((
+114  ((
 	ggíome
 .
 size
 () & 1)
 
-101 | ((
+115 | ((
 	ggíome
 .
 ‰⁄t
@@ -9733,7 +10275,7 @@ size
 	gsour˚Ty≥
 ) << 1)
 
-102 | ((
+116 | ((
 	ggíome
 .
 back
@@ -9741,7 +10283,7 @@ back
 	gsour˚Ty≥
 ) << 2)
 
-103 | ((
+117 | ((
 	ggíome
 .
 ‰⁄t
@@ -9749,7 +10291,7 @@ back
 	gsökTy≥
 ) << 3)
 
-104 | ((
+118 | ((
 	ggíome
 .
 back
@@ -9757,7 +10299,7 @@ back
 	gsökTy≥
 ) << 4)
 
-105 | ((
+119 | ((
 	ggíome
 .
 ‰⁄t
@@ -9765,7 +10307,7 @@ back
 	gsour˚Num
  & 1) << 5)
 
-106 | ((
+120 | ((
 	ggíome
 .
 ‰⁄t
@@ -9773,7 +10315,7 @@ back
 	gsökNum
  & 1) << 6)
 
-107 | ((
+121 | ((
 	ggíome
 .
 back
@@ -9781,7 +10323,7 @@ back
 	gsour˚Num
  & 1) << 7));
 
-124 
+138 
 boﬁ
  
 	gImageWrôî
@@ -9793,17 +10335,17 @@ simSãp
 gíî©i⁄
 )
 
-126 i‡(!
+140 i‡(!
 	gbusy
 ) {
 
-127 
+141 
 	gbusy
  = 
 åue
 ;
 
-132 
+146 
 	gd©a
 .
 	gsimSãp
@@ -9811,7 +10353,7 @@ gíî©i⁄
 simSãp
 ;
 
-133 
+147 
 	gd©a
 .
 	ggíî©i⁄
@@ -9819,7 +10361,7 @@ simSãp
 gíî©i⁄
 ;
 
-134 
+148 
 	gd©a
 .
 	gödivLocs
@@ -9827,7 +10369,7 @@ gíî©i⁄
 ˛ór
 ();
 
-135 
+149 
 	gd©a
 .
 	gödivCﬁ‹s
@@ -9835,7 +10377,7 @@ gíî©i⁄
 ˛ór
 ();
 
-136 
+150 
 	gd©a
 .
 	gb¨rõrLocs
@@ -9843,7 +10385,7 @@ gíî©i⁄
 ˛ór
 ();
 
-137 
+151 
 	gd©a
 .
 	gsig«lLayîs
@@ -9851,7 +10393,7 @@ gíî©i⁄
 ˛ór
 ();
 
-139 
+153 
 uöt16_t
  
 	gödex
@@ -9861,7 +10403,7 @@ p
 p›uœti⁄
 ; ++index) {
 
-140 c⁄° 
+154 c⁄° 
 	gIndiv
  &
 	gödiv
@@ -9871,13 +10413,13 @@ p›uœti⁄
 ödex
 ];
 
-141 i‡(
+155 i‡(
 	gödiv
 .
 	gÆive
 ) {
 
-142 
+156 
 	gd©a
 .
 	gödivLocs
@@ -9889,7 +10431,7 @@ push_back
 loc
 );
 
-143 
+157 
 	gd©a
 .
 	gödivCﬁ‹s
@@ -9903,7 +10445,7 @@ makeGíëicCﬁ‹
 gíome
 ));
 
-147 autÿc⁄° &
+161 autÿc⁄° &
 	gb¨rõrLocs
  = 
 grid
@@ -9911,7 +10453,7 @@ grid
 gëB¨rõrLoˇti⁄s
 ();
 
-148 
+162 
 Co‹d
  
 	gloc
@@ -9919,7 +10461,7 @@ Co‹d
 b¨rõrLocs
 ) {
 
-149 
+163 
 d©a
 .
 b¨rõrLocs
@@ -9929,7 +10471,7 @@ push_back
 loc
 );
 
-154 
+168 
 	g°d
 ::
 lock_gu¨d
@@ -9943,31 +10485,31 @@ lck
 muãx_
 );
 
-155 
+169 
 	gd©aRódy
  = 
 åue
 ;
 
-157 
+171 
 	gc⁄dV¨
 .
 nŸify_⁄e
 ();
 
-158  
+172  
 	gåue
 ;
 
-161 ++
+175 ++
 	gdr›≥dFømeCou¡
 ;
 
-162  
+176  
 	gÁl£
 ;
 
-168 
+182 
 boﬁ
  
 	gImageWrôî
@@ -9979,7 +10521,7 @@ simSãp
 gíî©i⁄
 )
 
-173 
+187 
 	gd©a
 .
 	gsimSãp
@@ -9987,7 +10529,7 @@ gíî©i⁄
 simSãp
 ;
 
-174 
+188 
 	gd©a
 .
 	ggíî©i⁄
@@ -9995,7 +10537,7 @@ simSãp
 gíî©i⁄
 ;
 
-175 
+189 
 	gd©a
 .
 	gödivLocs
@@ -10003,7 +10545,7 @@ gíî©i⁄
 ˛ór
 ();
 
-176 
+190 
 	gd©a
 .
 	gödivCﬁ‹s
@@ -10011,7 +10553,7 @@ gíî©i⁄
 ˛ór
 ();
 
-177 
+191 
 	gd©a
 .
 	gb¨rõrLocs
@@ -10019,7 +10561,15 @@ gíî©i⁄
 ˛ór
 ();
 
-178 
+192 
+	gd©a
+.
+	gfoodLocs
+.
+˛ór
+();
+
+193 
 	gd©a
 .
 	gsig«lLayîs
@@ -10027,7 +10577,7 @@ gíî©i⁄
 ˛ór
 ();
 
-180 
+195 
 uöt16_t
  
 	gödex
@@ -10037,7 +10587,7 @@ p
 p›uœti⁄
 ; ++index) {
 
-181 c⁄° 
+196 c⁄° 
 	gIndiv
  &
 	gödiv
@@ -10047,13 +10597,13 @@ p›uœti⁄
 ödex
 ];
 
-182 i‡(
+197 i‡(
 	gödiv
 .
 	gÆive
 ) {
 
-183 
+198 
 	gd©a
 .
 	gödivLocs
@@ -10065,7 +10615,7 @@ push_back
 loc
 );
 
-184 
+199 
 	gd©a
 .
 	gödivCﬁ‹s
@@ -10079,7 +10629,33 @@ makeGíëicCﬁ‹
 gíome
 ));
 
-188 autÿc⁄° &
+203 autÿc⁄° &
+	gfoodLocs
+ = 
+grid
+.
+gëFoodLoˇti⁄s
+();
+
+204 
+Co‹d
+ 
+	gloc
+ : 
+foodLocs
+) {
+
+205 
+d©a
+.
+foodLocs
+.
+push_back
+(
+loc
+);
+
+208 autÿc⁄° &
 	gb¨rõrLocs
  = 
 grid
@@ -10087,7 +10663,7 @@ grid
 gëB¨rõrLoˇti⁄s
 ();
 
-189 
+209 
 Co‹d
  
 	gloc
@@ -10095,7 +10671,7 @@ Co‹d
 b¨rõrLocs
 ) {
 
-190 
+210 
 d©a
 .
 b¨rõrLocs
@@ -10105,17 +10681,17 @@ push_back
 loc
 );
 
-193 
+213 
 ßveO√FømeImmed
 (
 d©a
 );
 
-194  
+214  
 	gåue
 ;
 
-199 
+219 
 	gImageWrôî
 ::
 ßveGíî©i⁄Video
@@ -10123,13 +10699,13 @@ d©a
 gíî©i⁄
 )
 
-201 i‡(
+221 i‡(
 imageLi°
 .
 size
 () > 0) {
 
-202 
+222 
 °d
 ::
 °rög°ªam
@@ -10137,7 +10713,7 @@ size
 videoFûíame
 ;
 
-203 
+223 
 	gvideoFûíame
  << 
 	gp
@@ -10147,7 +10723,7 @@ videoFûíame
 c_°r
 () << "/gen-"
 
-204 << 
+224 << 
 	g°d
 ::
 £tfûl
@@ -10159,13 +10735,13 @@ c_°r
 gíî©i⁄
 
 
-206 
+226 
 	gcv
 ::
 £tNumThªads
 (2);
 
-207 
+227 
 	gimageLi°
 .
 ßve_video
@@ -10177,11 +10753,11 @@ videoFûíame
 c_°r
 (),
 
-210 i‡(
+230 i‡(
 	gskù≥dFømes
  > 0) {
 
-211 
+231 
 	g°d
 ::
 cout
@@ -10193,29 +10769,29 @@ skù≥dFømes
 ídl
 ;
 
-214 
+234 
 °¨tNewGíî©i⁄
 ();
 
-218 
+238 
 	gImageWrôî
 ::
 ab‹t
 ()
 
-220 
+240 
 busy
  =
 åue
 ;
 
-221 
+241 
 	gab‹tReque°ed
  = 
 åue
 ;
 
-223 
+243 
 	g°d
 ::
 lock_gu¨d
@@ -10229,31 +10805,31 @@ lck
 muãx_
 );
 
-224 
+244 
 	gd©aRódy
  = 
 åue
 ;
 
-226 
+246 
 	gc⁄dV¨
 .
 nŸify_⁄e
 ();
 
-233 
+253 
 	gImageWrôî
 ::
 ßveFømeThªad
 ()
 
-235 
+255 
 busy
  = 
 Ál£
 ;
 
-236 
+256 
 	g°d
 ::
 cout
@@ -10263,11 +10839,11 @@ cout
 ídl
 ;
 
-238 
+258 
 	gåue
 ) {
 
-240 
+260 
 	g°d
 ::
 unique_lock
@@ -10281,7 +10857,7 @@ lck
 muãx_
 );
 
-241 
+261 
 	gc⁄dV¨
 .
 waô
@@ -10293,23 +10869,23 @@ d©aRódy
 busy
 ; });
 
-243 
+263 
 	gd©aRódy
  = 
 Ál£
 ;
 
-244 
+264 
 	gbusy
  = 
 Ál£
 ;
 
-246 i‡(
+266 i‡(
 	gab‹tReque°ed
 ) {
 
-251 
+271 
 ßveO√FømeImmed
 (
 imageWrôî
@@ -10317,7 +10893,7 @@ imageWrôî
 d©a
 );
 
-257 
+277 
 	g°d
 ::
 cout
@@ -10415,7 +10991,17 @@ Co‹d
 b¨rõrLocs
 ;
 
-26 
+26 
+	g°d
+::
+ve˘‹
+<
+Co‹d
+> 
+foodLocs
+;
+
+27 
 	g°d
 ::
 	tve˘‹
@@ -10427,7 +11013,7 @@ b¨rõrLocs
 	tSig«lLayî
 ;
 
-27 
+28 
 	g°d
 ::
 ve˘‹
@@ -10437,19 +11023,19 @@ Sig«lLayî
 sig«lLayîs
 ;
 
-31 
+32 
 	sImageWrôî
  {
 
-32 
+33 
 ImageWrôî
 ();
 
-33 
+34 
 °¨tNewGíî©i⁄
 ();
 
-34 
+35 
 boﬁ
  
 ßveVideoFøme
@@ -10459,7 +11045,7 @@ simSãp
 gíî©i⁄
 );
 
-35 
+36 
 boﬁ
  
 ßveVideoFømeSync
@@ -10469,21 +11055,21 @@ simSãp
 gíî©i⁄
 );
 
-36 
+37 
 ßveGíî©i⁄Video
 (
 gíî©i⁄
 );
 
-37 
+38 
 ab‹t
 ();
 
-38 
+39 
 ßveFømeThªad
 ();
 
-39 
+40 
 	g°d
 ::
 ©omic
@@ -10491,11 +11077,11 @@ ab‹t
 dr›≥dFømeCou¡
 ;
 
-40 
+41 
 	g¥iv©e
 :
 
-41 
+42 
 °d
 ::
 ©omic
@@ -10505,7 +11091,7 @@ boﬁ
 busy
 ;
 
-42 
+43 
 	g°d
 ::
 muãx
@@ -10513,7 +11099,7 @@ muãx
 muãx_
 ;
 
-43 
+44 
 	g°d
 ::
 c⁄dôi⁄_v¨übÀ
@@ -10521,29 +11107,29 @@ c⁄dôi⁄_v¨übÀ
 c⁄dV¨
 ;
 
-44 
+45 
 boﬁ
  
 	gd©aRódy
 ;
 
-46 
+47 
 ImageFømeD©a
  
 	gd©a
 ;
 
-47 
+48 
 boﬁ
  
 	gab‹tReque°ed
 ;
 
-48 
+49 
 	gskù≥dFømes
 ;
 
-51 
+52 
 ImageWrôî
  
 imageWrôî
@@ -10614,16 +11200,28 @@ loc_
  = 0;
 
 20 
+	gsize
+ = 1;
+
+21 
+	gíîgy
+ = 
+p
+.
+öôülE√rgy
+;
+
+22 
 	goscPîiod
  = 34;
 
-21 
+23 
 	gÆive
  = 
 åue
 ;
 
-22 
+24 
 	gœ°MoveDú
  = 
 Dú
@@ -10631,11 +11229,11 @@ Dú
 øndom8
 ();
 
-23 
+25 
 	gª•⁄sivíess
  = 0.5;
 
-24 
+26 
 	gl⁄gProbeDi°
  = 
 p
@@ -10643,13 +11241,13 @@ p
 l⁄gProbeDi°™˚
 ;
 
-25 
+27 
 	gchÆÀngeBôs
  = ()
 Ál£
 ;
 
-26 
+28 
 	ggíome
  = 
 °d
@@ -10659,7 +11257,7 @@ move
 gíome_
 );
 
-27 
+29 
 ¸óãWúögFromGíome
 ();
 
@@ -10730,44 +11328,52 @@ Co‹d
 ;
 
 21 
+	gsize
+;
+
+22 
+	gíîgy
+;
+
+23 
 	gage
 ;
 
-22 
+24 
 Gíome
  
 	ggíome
 ;
 
-23 
+25 
 NeuølNë
  
 	g¬ë
 ;
 
-24 
+26 
 	gª•⁄sivíess
 ;
 
-25 
+27 
 	goscPîiod
 ;
 
-26 
+28 
 	gl⁄gProbeDi°
 ;
 
-27 
+29 
 Dú
  
 	gœ°MoveDú
 ;
 
-28 
+30 
 	gchÆÀngeBôs
 ;
 
-29 
+31 
 	g°d
 ::
 ¨øy
@@ -10781,7 +11387,7 @@ NUM_ACTIONS
 simSãp
 );
 
-30 
+32 
 gëSís‹
 (
 Sís‹
@@ -10789,7 +11395,7 @@ Sís‹
 simSãp
 ) const;
 
-31 
+33 
 öôülize
 (
 uöt16_t
@@ -10805,19 +11411,19 @@ Gíome
 gíome
 );
 
-32 
+34 
 ¸óãWúögFromGíome
 ();
 
-33 
+35 
 ¥ötNeuølNë
 () const;
 
-34 
+36 
 ¥ötIGøphEdgeLi°
 () const;
 
-35 
+37 
 ¥ötGíome
 () const;
 
@@ -10998,10 +11604,28 @@ sizeX
 38 
 	g¥ivP¨ams
 .
+	g≥r˚¡ageFoodLoˇti⁄s
+ = 20;
+
+39 
+	g¥ivP¨ams
+.
+	gíîgyPîFoodUnô
+ = 100;
+
+40 
+	g¥ivP¨ams
+.
+	gmovemítE√rgyCo°
+ = 1;
+
+41 
+	g¥ivP¨ams
+.
 	gª∂a˚B¨rõrTy≥
  = 0;
 
-39 
+42 
 	g¥ivP¨ams
 .
 	gª∂a˚B¨rõrTy≥Gíî©i⁄Numbî
@@ -11009,19 +11633,19 @@ sizeX
 uöt32_t
 )-1;
 
-40 
+43 
 	g¥ivP¨ams
 .
 	gnumThªads
  = 1;
 
-41 
+44 
 	g¥ivP¨ams
 .
 	gsig«lLayîs
  = 1;
 
-42 
+45 
 	g¥ivP¨ams
 .
 	gmaxNumbîNeur⁄s
@@ -11031,25 +11655,25 @@ uöt32_t
 gíomeMaxLígth
  / 2;
 
-43 
+46 
 	g¥ivP¨ams
 .
 	gpoötMuèti⁄R©e
  = 0.0001;
 
-44 
+47 
 	g¥ivP¨ams
 .
 	ggíeIn£πi⁄Dñëi⁄R©e
  = 0.0001;
 
-45 
+48 
 	g¥ivP¨ams
 .
 	gdñëi⁄R©io
  = 0.7;
 
-46 
+49 
 	g¥ivP¨ams
 .
 	gkûlE«bÀ
@@ -11057,7 +11681,7 @@ gíomeMaxLígth
 Ál£
 ;
 
-47 
+50 
 	g¥ivP¨ams
 .
 	g£xuÆRïrodu˘i⁄
@@ -11065,7 +11689,7 @@ gíomeMaxLígth
 åue
 ;
 
-48 
+51 
 	g¥ivP¨ams
 .
 	gchoo£P¨ítsByFô√ss
@@ -11073,49 +11697,55 @@ gíomeMaxLígth
 åue
 ;
 
-49 
+52 
 	g¥ivP¨ams
 .
 	gp›uœti⁄Sís‹Radius
  = 2.0;
 
-50 
+53 
 	g¥ivP¨ams
 .
 	gsig«lSís‹Radius
  = 1;
 
-51 
+54 
 	g¥ivP¨ams
 .
 	gª•⁄sivíess
  = 0.5;
 
-52 
+55 
 	g¥ivP¨ams
 .
 	gª•⁄sivíessCurveKFa˘‹
  = 2;
 
-53 
+56 
 	g¥ivP¨ams
 .
 	gl⁄gProbeDi°™˚
  = 16;
 
-54 
+57 
 	g¥ivP¨ams
 .
 	gsh‹tProbeB¨rõrDi°™˚
  = 3;
 
-55 
+58 
+	g¥ivP¨ams
+.
+	gsh‹tProbeFoodDi°™˚
+ = 10;
+
+59 
 	g¥ivP¨ams
 .
 	gvÆí˚S©uøti⁄Mag
  = 0.5;
 
-56 
+60 
 	g¥ivP¨ams
 .
 	gßveVideo
@@ -11123,49 +11753,49 @@ gíomeMaxLígth
 åue
 ;
 
-57 
+61 
 	g¥ivP¨ams
 .
 	gvideoSåide
  = 1;
 
-58 
+62 
 	g¥ivP¨ams
 .
 	gvideoSaveFú°Fømes
  = 0;
 
-59 
+63 
 	g¥ivP¨ams
 .
 	gdi•œySˇÀ
  = 1;
 
-60 
+64 
 	g¥ivP¨ams
 .
 	gagítSize
  = 2;
 
-61 
+65 
 	g¥ivP¨ams
 .
 	ggíomeA«lysisSåide
  = 1;
 
-62 
+66 
 	g¥ivP¨ams
 .
 	gdi•œySam∂eGíomes
  = 0;
 
-63 
+67 
 	g¥ivP¨ams
 .
 	ggíomeCom∑ris⁄Mëhod
  = 1;
 
-64 
+68 
 	g¥ivP¨ams
 .
 	gupd©eGøphLog
@@ -11173,19 +11803,19 @@ gíomeMaxLígth
 Ál£
 ;
 
-65 
+69 
 	g¥ivP¨ams
 .
 	gupd©eGøphLogSåide
  = 16;
 
-66 
+70 
 	g¥ivP¨ams
 .
 	ggøphLogUpd©eComm™d
  = "/usr/bin/gnuplot --persist ./tools/graphlog.gp";
 
-70 
+74 
 	gP¨amM™agî
 ::
 ªgi°îC⁄figFûe
@@ -11193,7 +11823,7 @@ gíomeMaxLígth
 fûíame
 )
 
-72 
+76 
 c⁄figFûíame
  = 
 °d
@@ -11203,7 +11833,7 @@ c⁄figFûíame
 fûíame
 );
 
-76 
+80 
 boﬁ
  
 checkIfUöt
@@ -11215,7 +11845,7 @@ checkIfUöt
 s
 )
 
-78  
+82  
 s
 .
 föd_fú°_nŸ_of
@@ -11227,7 +11857,7 @@ föd_fú°_nŸ_of
 ≈os
 ;
 
-82 
+86 
 boﬁ
  
 checkIfI¡
@@ -11239,7 +11869,7 @@ checkIfI¡
 s
 )
 
-85 
+89 
 °d
 ::
 i°rög°ªam
@@ -11249,11 +11879,11 @@ iss
 s
 );
 
-86 
+90 
 	gi
 ;
 
-87 
+91 
 	giss
  >> 
 	g°d
@@ -11263,7 +11893,7 @@ noskùws
 i
 ;
 
-89  
+93  
 	giss
 .
 eof
@@ -11271,7 +11901,7 @@ eof
 Áû
 ();
 
-93 
+97 
 boﬁ
  
 checkIfFlﬂt
@@ -11283,7 +11913,7 @@ checkIfFlﬂt
 s
 )
 
-95 
+99 
 °d
 ::
 i°rög°ªam
@@ -11293,11 +11923,11 @@ iss
 s
 );
 
-96 
+100 
 	gd
 ;
 
-97 
+101 
 	giss
  >> 
 	g°d
@@ -11307,7 +11937,7 @@ noskùws
 d
 ;
 
-99  
+103  
 	giss
 .
 eof
@@ -11315,7 +11945,7 @@ eof
 Áû
 ();
 
-103 
+107 
 boﬁ
  
 checkIfBoﬁ
@@ -11327,11 +11957,11 @@ checkIfBoﬁ
 s
 )
 
-105  
+109  
 s
  == "0" || s == "1" || s == "true" || s == "false";
 
-109 
+113 
 boﬁ
  
 gëBoﬁVÆ
@@ -11343,29 +11973,29 @@ gëBoﬁVÆ
 s
 )
 
-111 i‡(
+115 i‡(
 s
  == "true" || s == "1")
 
-112  
+116  
 åue
 ;
 
-113 i‡(
+117 i‡(
 	gs
  ="Ál£" || 
 s
  == "0")
 
-114  
+118  
 Ál£
 ;
 
-116  
+120  
 	gÁl£
 ;
 
-120 
+124 
 	gP¨amM™agî
 ::
 öge°P¨amëî
@@ -11379,7 +12009,7 @@ s
 vÆ
 )
 
-122 
+126 
 °d
 ::
 å™sf‹m
@@ -11391,7 +12021,7 @@ begö
 íd
 (),Çame.begin(),
 
-123 [](
+127 [](
 c
 ){  
 °d
@@ -11399,7 +12029,7 @@ c
 tﬁowî
 (c); });
 
-126 
+130 
 boﬁ
  
 	gisUöt
@@ -11409,7 +12039,7 @@ checkIfUöt
 vÆ
 );
 
-127 
+131 
 	guVÆ
  = 
 isUöt
@@ -11423,7 +12053,7 @@ vÆ
 c_°r
 ()) : 0;
 
-128 
+132 
 boﬁ
  
 	gisI¡
@@ -11433,7 +12063,7 @@ checkIfI¡
 vÆ
 );
 
-129 
+133 
 	giVÆ
  = 
 isI¡
@@ -11447,7 +12077,7 @@ vÆ
 c_°r
 ()) : 0;
 
-130 
+134 
 boﬁ
  
 	gisFlﬂt
@@ -11457,7 +12087,7 @@ checkIfFlﬂt
 vÆ
 );
 
-131 
+135 
 	gdVÆ
  = 
 isFlﬂt
@@ -11471,7 +12101,7 @@ vÆ
 c_°r
 ()) : 0.0;
 
-132 
+136 
 boﬁ
  
 	gisBoﬁ
@@ -11481,7 +12111,7 @@ checkIfBoﬁ
 vÆ
 );
 
-133 
+137 
 boﬁ
  
 	gbVÆ
@@ -11491,7 +12121,7 @@ gëBoﬁVÆ
 vÆ
 );
 
-136 i‡(
+140 i‡(
 	g«me
  ="sizex" && 
 isUöt
@@ -11501,7 +12131,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-137 
+141 
 ¥ivP¨ams
 .
 sizeX
@@ -11509,7 +12139,7 @@ sizeX
 uVÆ
 ; ;
 
-139 i‡(
+143 i‡(
 	g«me
  ="sizey" && 
 isUöt
@@ -11519,7 +12149,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-140 
+144 
 ¥ivP¨ams
 .
 sizeY
@@ -11527,7 +12157,7 @@ sizeY
 uVÆ
 ; ;
 
-142 i‡(
+146 i‡(
 	g«me
  ="chÆÀnge" && 
 isUöt
@@ -11537,7 +12167,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-143 
+147 
 ¥ivP¨ams
 .
 chÆÀnge
@@ -11545,7 +12175,7 @@ chÆÀnge
 uVÆ
 ; ;
 
-145 i‡(
+149 i‡(
 	g«me
  ="gíomeöôüŒígthmö" && 
 isUöt
@@ -11555,7 +12185,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-146 
+150 
 ¥ivP¨ams
 .
 gíomeInôülLígthMö
@@ -11563,7 +12193,7 @@ gíomeInôülLígthMö
 uVÆ
 ; ;
 
-148 i‡(
+152 i‡(
 	g«me
  ="gíomeöôüŒígthmax" && 
 isUöt
@@ -11573,7 +12203,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-149 
+153 
 ¥ivP¨ams
 .
 gíomeInôülLígthMax
@@ -11581,11 +12211,11 @@ gíomeInôülLígthMax
 uVÆ
 ; ;
 
-151 i‡(
+155 i‡(
 	g«me
  == "logdir") {
 
-152 
+156 
 ¥ivP¨ams
 .
 logDú
@@ -11593,11 +12223,11 @@ logDú
 vÆ
 ; ;
 
-154 i‡(
+158 i‡(
 	g«me
  == "imagedir") {
 
-155 
+159 
 ¥ivP¨ams
 .
 imageDú
@@ -11605,7 +12235,7 @@ imageDú
 vÆ
 ; ;
 
-157 i‡(
+161 i‡(
 	g«me
  ="p›uœti⁄" && 
 isUöt
@@ -11615,7 +12245,7 @@ uVÆ
 uöt32_t
 )-1) {
 
-158 
+162 
 ¥ivP¨ams
 .
 p›uœti⁄
@@ -11623,7 +12253,7 @@ p›uœti⁄
 uVÆ
 ; ;
 
-160 i‡(
+164 i‡(
 	g«me
  ="°ï•îgíî©i⁄" && 
 isUöt
@@ -11633,7 +12263,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-161 
+165 
 ¥ivP¨ams
 .
 °ïsPîGíî©i⁄
@@ -11641,7 +12271,7 @@ uöt16_t
 uVÆ
 ; ;
 
-163 i‡(
+167 i‡(
 	g«me
  ="maxgíî©i⁄s" && 
 isUöt
@@ -11649,7 +12279,7 @@ isUöt
 uVÆ
  > 0 && uVal < 0x7fffffff) {
 
-164 
+168 
 ¥ivP¨ams
 .
 maxGíî©i⁄s
@@ -11657,7 +12287,7 @@ maxGíî©i⁄s
 uVÆ
 ; ;
 
-166 i‡(
+170 i‡(
 	g«me
  ="b¨rõπy≥" && 
 isUöt
@@ -11667,7 +12297,7 @@ uVÆ
 uöt32_t
 )-1) {
 
-167 
+171 
 ¥ivP¨ams
 .
 b¨rõrTy≥
@@ -11675,7 +12305,7 @@ b¨rõrTy≥
 uVÆ
 ; ;
 
-169 i‡(
+173 i‡(
 	g«me
  ="ª∂a˚b¨rõπy≥" && 
 isUöt
@@ -11685,7 +12315,7 @@ uVÆ
 uöt32_t
 )-1) {
 
-170 
+174 
 ¥ivP¨ams
 .
 ª∂a˚B¨rõrTy≥
@@ -11693,7 +12323,7 @@ uöt32_t
 uVÆ
 ; ;
 
-172 i‡(
+176 i‡(
 	g«me
  ="ª∂a˚b¨rõπy≥gíî©i⁄numbî" && 
 isI¡
@@ -11701,7 +12331,7 @@ isI¡
 iVÆ
  >= -1) {
 
-173 
+177 
 ¥ivP¨ams
 .
 ª∂a˚B¨rõrTy≥Gíî©i⁄Numbî
@@ -11711,7 +12341,7 @@ iVÆ
 uöt32_t
 )-1 : iVal); ;
 
-175 i‡(
+179 i‡(
 	g«me
  ="numthªads" && 
 isUöt
@@ -11721,7 +12351,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-176 
+180 
 ¥ivP¨ams
 .
 numThªads
@@ -11729,7 +12359,21 @@ numThªads
 uVÆ
 ; ;
 
-178 i‡(
+182 i‡(
+	g«me
+ ="öôüÀ√rgy" && 
+isUöt
+) {
+
+183 
+¥ivP¨ams
+.
+öôülE√rgy
+ = 
+uVÆ
+; ;
+
+185 i‡(
 	g«me
  ="sig«Œayîs" && 
 isUöt
@@ -11739,7 +12383,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-179 
+186 
 ¥ivP¨ams
 .
 sig«lLayîs
@@ -11747,7 +12391,7 @@ sig«lLayîs
 uVÆ
 ; ;
 
-181 i‡(
+188 i‡(
 	g«me
  ="gíomemaxÀngth" && 
 isUöt
@@ -11757,7 +12401,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-182 
+189 
 ¥ivP¨ams
 .
 gíomeMaxLígth
@@ -11765,7 +12409,7 @@ gíomeMaxLígth
 uVÆ
 ; ;
 
-184 i‡(
+191 i‡(
 	g«me
  ="maxnumbî√ur⁄s" && 
 isUöt
@@ -11775,7 +12419,7 @@ uVÆ
 uöt16_t
 )-1) {
 
-185 
+192 
 ¥ivP¨ams
 .
 maxNumbîNeur⁄s
@@ -11783,7 +12427,7 @@ maxNumbîNeur⁄s
 uVÆ
 ; ;
 
-187 i‡(
+194 i‡(
 	g«me
  ="poötmuèti⁄øã" && 
 isFlﬂt
@@ -11791,7 +12435,7 @@ isFlﬂt
 dVÆ
  >= 0.0 && dVal <= 1.0) {
 
-188 
+195 
 ¥ivP¨ams
 .
 poötMuèti⁄R©e
@@ -11799,7 +12443,7 @@ poötMuèti⁄R©e
 dVÆ
 ; ;
 
-190 i‡(
+197 i‡(
 	g«me
  ="gíeö£πi⁄dñëi⁄øã" && 
 isFlﬂt
@@ -11807,7 +12451,7 @@ isFlﬂt
 dVÆ
  >= 0.0 && dVal <= 1.0) {
 
-191 
+198 
 ¥ivP¨ams
 .
 gíeIn£πi⁄Dñëi⁄R©e
@@ -11815,7 +12459,7 @@ gíeIn£πi⁄Dñëi⁄R©e
 dVÆ
 ; ;
 
-193 i‡(
+200 i‡(
 	g«me
  ="dñëi⁄øtio" && 
 isFlﬂt
@@ -11823,7 +12467,7 @@ isFlﬂt
 dVÆ
  >= 0.0 && dVal <= 1.0) {
 
-194 
+201 
 ¥ivP¨ams
 .
 dñëi⁄R©io
@@ -11831,13 +12475,13 @@ dñëi⁄R©io
 dVÆ
 ; ;
 
-196 i‡(
+203 i‡(
 	g«me
  ="kûÀ«bÀ" && 
 isBoﬁ
 ) {
 
-197 
+204 
 ¥ivP¨ams
 .
 kûlE«bÀ
@@ -11845,13 +12489,13 @@ kûlE«bÀ
 bVÆ
 ; ;
 
-199 i‡(
+206 i‡(
 	g«me
  ="£xuÆª¥odu˘i⁄" && 
 isBoﬁ
 ) {
 
-200 
+207 
 ¥ivP¨ams
 .
 £xuÆRïrodu˘i⁄
@@ -11859,13 +12503,13 @@ isBoﬁ
 bVÆ
 ; ;
 
-202 i‡(
+209 i‡(
 	g«me
  ="choo£∑ª¡sbyfô√ss" && 
 isBoﬁ
 ) {
 
-203 
+210 
 ¥ivP¨ams
 .
 choo£P¨ítsByFô√ss
@@ -11873,7 +12517,7 @@ choo£P¨ítsByFô√ss
 bVÆ
 ; ;
 
-205 i‡(
+212 i‡(
 	g«me
  ="p›uœti⁄£ns‹ødius" && 
 isFlﬂt
@@ -11881,7 +12525,7 @@ isFlﬂt
 dVÆ
  > 0.0) {
 
-206 
+213 
 ¥ivP¨ams
 .
 p›uœti⁄Sís‹Radius
@@ -11889,7 +12533,7 @@ p›uœti⁄Sís‹Radius
 dVÆ
 ; ;
 
-208 i‡(
+215 i‡(
 	g«me
  ="sig«l£ns‹ødius" && 
 isFlﬂt
@@ -11897,7 +12541,7 @@ isFlﬂt
 dVÆ
  > 0.0) {
 
-209 
+216 
 ¥ivP¨ams
 .
 sig«lSís‹Radius
@@ -11905,7 +12549,7 @@ sig«lSís‹Radius
 dVÆ
 ; ;
 
-211 i‡(
+218 i‡(
 	g«me
  ="ª•⁄sivíess" && 
 isFlﬂt
@@ -11913,7 +12557,7 @@ isFlﬂt
 dVÆ
  >= 0.0) {
 
-212 
+219 
 ¥ivP¨ams
 .
 ª•⁄sivíess
@@ -11921,7 +12565,7 @@ dVÆ
 dVÆ
 ; ;
 
-214 i‡(
+221 i‡(
 	g«me
  ="ª•⁄sivíesscurvekÁ˘‹" && 
 isUöt
@@ -11929,7 +12573,7 @@ isUöt
 uVÆ
  >= 1 && uVal <= 20) {
 
-215 
+222 
 ¥ivP¨ams
 .
 ª•⁄sivíessCurveKFa˘‹
@@ -11937,7 +12581,7 @@ uVÆ
 uVÆ
 ; ;
 
-217 i‡(
+224 i‡(
 	g«me
  ="l⁄g¥obedi°™˚" && 
 isUöt
@@ -11945,7 +12589,7 @@ isUöt
 uVÆ
  > 0) {
 
-218 
+225 
 ¥ivP¨ams
 .
 l⁄gProbeDi°™˚
@@ -11953,7 +12597,7 @@ l⁄gProbeDi°™˚
 uVÆ
 ; ;
 
-220 i‡(
+227 i‡(
 	g«me
  ="sh‹çrobeb¨rõrdi°™˚" && 
 isUöt
@@ -11961,7 +12605,7 @@ isUöt
 uVÆ
  > 0) {
 
-221 
+228 
 ¥ivP¨ams
 .
 sh‹tProbeB¨rõrDi°™˚
@@ -11969,7 +12613,23 @@ sh‹tProbeB¨rõrDi°™˚
 uVÆ
 ; ;
 
-223 i‡(
+230 i‡(
+	g«me
+ ="sh‹çrobefooddi°™˚" && 
+isUöt
+ && 
+uVÆ
+ > 0) {
+
+231 
+¥ivP¨ams
+.
+sh‹tProbeFoodDi°™˚
+ = 
+uVÆ
+; ;
+
+233 i‡(
 	g«me
  ="vÆí˚ßtuøti⁄mag" && 
 isFlﬂt
@@ -11977,7 +12637,7 @@ isFlﬂt
 dVÆ
  >= 0.0) {
 
-224 
+234 
 ¥ivP¨ams
 .
 vÆí˚S©uøti⁄Mag
@@ -11985,13 +12645,13 @@ vÆí˚S©uøti⁄Mag
 dVÆ
 ; ;
 
-226 i‡(
+236 i‡(
 	g«me
  ="ßvevideo" && 
 isBoﬁ
 ) {
 
-227 
+237 
 ¥ivP¨ams
 .
 ßveVideo
@@ -11999,7 +12659,7 @@ isBoﬁ
 bVÆ
 ; ;
 
-229 i‡(
+239 i‡(
 	g«me
  ="video°ride" && 
 isUöt
@@ -12007,7 +12667,7 @@ isUöt
 uVÆ
  > 0) {
 
-230 
+240 
 ¥ivP¨ams
 .
 videoSåide
@@ -12015,13 +12675,13 @@ videoSåide
 uVÆ
 ; ;
 
-232 i‡(
+242 i‡(
 	g«me
  ="videoßvefú°‰ames" && 
 isUöt
 ) {
 
-233 
+243 
 ¥ivP¨ams
 .
 videoSaveFú°Fømes
@@ -12029,7 +12689,7 @@ videoSaveFú°Fømes
 uVÆ
 ; ;
 
-235 i‡(
+245 i‡(
 	g«me
  ="di•œysˇÀ" && 
 isUöt
@@ -12037,7 +12697,7 @@ isUöt
 uVÆ
  > 0) {
 
-236 
+246 
 ¥ivP¨ams
 .
 di•œySˇÀ
@@ -12045,7 +12705,7 @@ di•œySˇÀ
 uVÆ
 ; ;
 
-238 i‡(
+248 i‡(
 	g«me
  ="agítsize" && 
 isFlﬂt
@@ -12053,7 +12713,7 @@ isFlﬂt
 dVÆ
  > 0.0) {
 
-239 
+249 
 ¥ivP¨ams
 .
 agítSize
@@ -12061,7 +12721,7 @@ agítSize
 dVÆ
 ; ;
 
-241 i‡(
+251 i‡(
 	g«me
  ="gíomó«lysis°ride" && 
 isUöt
@@ -12069,7 +12729,7 @@ isUöt
 uVÆ
  > 0) {
 
-242 
+252 
 ¥ivP¨ams
 .
 gíomeA«lysisSåide
@@ -12077,13 +12737,13 @@ gíomeA«lysisSåide
 uVÆ
 ; ;
 
-244 i‡(
+254 i‡(
 	g«me
  ="gíomó«lysis°ride" && 
 vÆ
  == "videoStride") {
 
-245 
+255 
 ¥ivP¨ams
 .
 gíomeA«lysisSåide
@@ -12091,13 +12751,13 @@ gíomeA«lysisSåide
 videoSåide
 ; ;
 
-247 i‡(
+257 i‡(
 	g«me
  ="di•œyßm∂egíomes" && 
 isUöt
 ) {
 
-248 
+258 
 ¥ivP¨ams
 .
 di•œySam∂eGíomes
@@ -12105,13 +12765,13 @@ di•œySam∂eGíomes
 uVÆ
 ; ;
 
-250 i‡(
+260 i‡(
 	g«me
  ="gíomecom∑ris⁄mëhod" && 
 isUöt
 ) {
 
-251 
+261 
 ¥ivP¨ams
 .
 gíomeCom∑ris⁄Mëhod
@@ -12119,13 +12779,13 @@ gíomeCom∑ris⁄Mëhod
 uVÆ
 ; ;
 
-253 i‡(
+263 i‡(
 	g«me
  ="upd©egøphlog" && 
 isBoﬁ
 ) {
 
-254 
+264 
 ¥ivP¨ams
 .
 upd©eGøphLog
@@ -12133,7 +12793,7 @@ upd©eGøphLog
 bVÆ
 ; ;
 
-256 i‡(
+266 i‡(
 	g«me
  ="upd©egøphlog°ride" && 
 isUöt
@@ -12141,7 +12801,7 @@ isUöt
 uVÆ
  > 0) {
 
-257 
+267 
 ¥ivP¨ams
 .
 upd©eGøphLogSåide
@@ -12149,13 +12809,13 @@ upd©eGøphLogSåide
 uVÆ
 ; ;
 
-259 i‡(
+269 i‡(
 	g«me
  ="upd©egøphlog°ride" && 
 vÆ
  == "videoStride") {
 
-260 
+270 
 ¥ivP¨ams
 .
 upd©eGøphLogSåide
@@ -12163,7 +12823,51 @@ upd©eGøphLogSåide
 videoSåide
 ; ;
 
-263 
+272 i‡(
+	g«me
+ ="≥r˚¡agefoodloˇti⁄s" && 
+isUöt
+) {
+
+273 
+¥ivP¨ams
+.
+≥r˚¡ageFoodLoˇti⁄s
+ = 
+uVÆ
+; ;
+
+275 i‡(
+	g«me
+ ="íîgy≥rfoodunô" && 
+isUöt
+ && 
+uVÆ
+ > 0) {
+
+276 
+¥ivP¨ams
+.
+íîgyPîFoodUnô
+ = 
+uVÆ
+; ;
+
+278 i‡(
+	g«me
+ ="movemíã√rgyco°" && 
+isUöt
+) {
+
+279 
+¥ivP¨ams
+.
+movemítE√rgyCo°
+ = 
+uVÆ
+; ;
+
+282 
 	g°d
 ::
 cout
@@ -12177,13 +12881,13 @@ vÆ
 ídl
 ;
 
-269 
+288 
 	gP¨amM™agî
 ::
 upd©eFromC⁄figFûe
 ()
 
-272 
+291 
 °d
 ::
 if°ªam
@@ -12195,13 +12899,13 @@ c⁄figFûíame
 c_°r
 ());
 
-273 i‡(
+292 i‡(
 	gcFûe
 .
 is_›í
 ()) {
 
-274 
+293 
 	g°d
 ::
 °rög
@@ -12209,7 +12913,7 @@ is_›í
 löe
 ;
 
-275 
+294 
 gëlöe
 (
 cFûe
@@ -12217,7 +12921,7 @@ cFûe
 löe
 )){
 
-276 
+295 
 	glöe
 .
 îa£
@@ -12235,13 +12939,13 @@ begö
 is•a˚
 ),
 
-277 
+296 
 löe
 .
 íd
 ());
 
-278 if(
+297 if(
 	glöe
 [0] ='#' || 
 löe
@@ -12249,7 +12953,7 @@ löe
 em±y
 ()) {
 
-281 autÿ
+300 autÿ
 	gdñimôîPos
  = 
 löe
@@ -12257,7 +12961,7 @@ löe
 föd
 ("=");
 
-282 autÿ
+301 autÿ
 	g«me
  = 
 löe
@@ -12267,7 +12971,7 @@ sub°r
 dñimôîPos
 );
 
-283 
+302 
 	g°d
 ::
 å™sf‹m
@@ -12279,7 +12983,7 @@ begö
 íd
 (),Çame.begin(),
 
-284 [](
+303 [](
 c
 ){  
 °d
@@ -12287,7 +12991,7 @@ c
 tﬁowî
 (c); });
 
-285 autÿ
+304 autÿ
 	gvÆue0
  = 
 löe
@@ -12297,7 +13001,7 @@ sub°r
 dñimôîPos
  + 1);
 
-286 autÿ
+305 autÿ
 	gdñimôîCommít
  = 
 vÆue0
@@ -12305,7 +13009,7 @@ vÆue0
 föd
 ("#");
 
-287 autÿ
+306 autÿ
 	gvÆue
  = 
 vÆue0
@@ -12315,13 +13019,13 @@ sub°r
 dñimôîCommít
 );
 
-288 autÿ
+307 autÿ
 	gøwVÆue
  = 
 vÆue
 ;
 
-289 
+308 
 	gvÆue
 .
 îa£
@@ -12339,13 +13043,13 @@ begö
 is•a˚
 ),
 
-290 
+309 
 vÆue
 .
 íd
 ());
 
-292 
+311 
 öge°P¨amëî
 (
 «me
@@ -12353,7 +13057,7 @@ vÆue
 vÆue
 );
 
-296 
+315 
 	g°d
 ::
 ˚º
@@ -12491,91 +13195,111 @@ boﬁ
 	gsh‹tProbeB¨rõrDi°™˚
 ;
 
-44 
+44 
+	gsh‹tProbeFoodDi°™˚
+;
+
+45 
+	g≥r˚¡ageFoodLoˇti⁄s
+;
+
+46 
+	göôülE√rgy
+;
+
+47 
+	gíîgyPîFoodUnô
+;
+
+48 
+	gmovemítE√rgyCo°
+;
+
+49 
 	gvÆí˚S©uøti⁄Mag
 ;
 
-45 
+50 
 boﬁ
  
 	gßveVideo
 ;
 
-46 
+51 
 	gvideoSåide
 ;
 
-47 
+52 
 	gvideoSaveFú°Fømes
 ;
 
-48 
+53 
 	gdi•œySˇÀ
 ;
 
-49 
+54 
 	gagítSize
 ;
 
-50 
+55 
 	ggíomeA«lysisSåide
 ;
 
-51 
+56 
 	gdi•œySam∂eGíomes
 ;
 
-52 
+57 
 	ggíomeCom∑ris⁄Mëhod
 ;
 
-53 
+58 
 boﬁ
  
 	gupd©eGøphLog
 ;
 
-54 
+59 
 	gupd©eGøphLogSåide
 ;
 
-55 
+60 
 	gchÆÀnge
 ;
 
-56 
+61 
 	gb¨rõrTy≥
 ;
 
-57 
+62 
 	gª∂a˚B¨rõrTy≥
 ;
 
-58 
+63 
 	gª∂a˚B¨rõrTy≥Gíî©i⁄Numbî
 ;
 
-61 
+66 
 uöt16_t
  
 	gsizeX
 ;
 
-62 
+67 
 uöt16_t
  
 	gsizeY
 ;
 
-63 
+68 
 	ggíomeInôülLígthMö
 ;
 
-64 
+69 
 	ggíomeInôülLígthMax
 ;
 
-65 
+70 
 	g°d
 ::
 °rög
@@ -12583,7 +13307,7 @@ uöt16_t
 logDú
 ;
 
-66 
+71 
 	g°d
 ::
 °rög
@@ -12591,7 +13315,7 @@ logDú
 imageDú
 ;
 
-67 
+72 
 	g°d
 ::
 °rög
@@ -12599,15 +13323,15 @@ imageDú
 gøphLogUpd©eComm™d
 ;
 
-70 ˛as†
+75 ˛as†
 	cP¨amM™agî
  {
 
-71 
+76 
 	gpublic
 :
 
-72 c⁄° 
+77 c⁄° 
 P¨ams
  &
 gëP¨amRef
@@ -12615,31 +13339,31 @@ gëP¨amRef
 ¥ivP¨ams
 ; }
 
-73 
+78 
 £tDeÁu…s
 ();
 
-74 
+79 
 ªgi°îC⁄figFûe
 (c⁄° *
 fûíame
 );
 
-75 
+80 
 upd©eFromC⁄figFûe
 ();
 
-76 
+81 
 	g¥iv©e
 :
 
-77 
+82 
 P¨ams
  
 ¥ivP¨ams
 ;
 
-78 
+83 
 	g°d
 ::
 °rög
@@ -12647,13 +13371,13 @@ P¨ams
 c⁄figFûíame
 ;
 
-79 
+84 
 time_t
  
 	gœ°ModTime
 ;
 
-80 
+85 
 öge°P¨amëî
 (
 °d
@@ -12665,7 +13389,7 @@ time_t
 vÆ
 );
 
-86 
+91 
 P¨ams
  
 ∑ømsInô
@@ -13750,110 +14474,122 @@ ACTION_MIN
 ,
 
 52 
-	gBARRIER_FWD
+	gENERGY
 ,
 
 53 
-	gBARRIER_LR
+	gBARRIER_FWD
 ,
 
 54 
-	gRANDOM
+	gBARRIER_LR
 ,
 
 55 
-	gSIGNAL0
+	gFOOD_LR
 ,
 
 56 
-	gSIGNAL0_FWD
+	gFOOD_FWD
 ,
 
 57 
-	gSIGNAL0_LR
+	gRANDOM
 ,
 
 58 
+	gSIGNAL0
+,
+
+59 
+	gSIGNAL0_FWD
+,
+
+60 
+	gSIGNAL0_LR
+,
+
+61 
 	gNUM_SENSES
 ,
 
-68 
+71 
 	eA˘i⁄
  {
 
-69 
+72 
 	gMOVE_X
 ,
 
-70 
+73 
 	gMOVE_Y
 ,
 
-71 
+74 
 	gMOVE_FORWARD
 ,
 
-72 
+75 
 	gMOVE_RL
 ,
 
-73 
+76 
 	gMOVE_RANDOM
 ,
 
-74 
+77 
 	gSET_OSCILLATOR_PERIOD
 ,
 
-75 
+78 
 	gSET_LONGPROBE_DIST
 ,
 
-76 
+79 
 	gSET_RESPONSIVENESS
 ,
 
-77 
+80 
 	gEMIT_SIGNAL0
 ,
 
-78 
+81 
 	gMOVE_EAST
 ,
 
-79 
+82 
 	gMOVE_WEST
 ,
 
-80 
+83 
 	gMOVE_NORTH
 ,
 
-81 
+84 
 	gMOVE_SOUTH
 ,
 
-82 
+85 
 	gMOVE_LEFT
 ,
 
-83 
+86 
 	gMOVE_RIGHT
 ,
 
-84 
+87 
 	gMOVE_REVERSE
 ,
 
-85 
+88 
 	gNUM_ACTIONS
 ,
 
-86 
+89 
 	gKILL_FORWARD
 ,
 
-89 
+92 
 °d
 ::
 °rög
@@ -13865,7 +14601,7 @@ Sís‹
 £ns‹
 );
 
-90 
+93 
 °d
 ::
 °rög
@@ -13877,7 +14613,7 @@ A˘i⁄
 a˘i⁄
 );
 
-91 
+94 
 ¥ötSís‹sA˘i⁄s
 ();
 
@@ -15033,37 +15769,43 @@ c⁄°ex¥
 	gCHALLENGE_ALTRUISM_SACRIFICE
  = 18;
 
-40 
+39 
+c⁄°ex¥
+ 
+	gCHALLENGE_EAT_TO_SURVIVE
+ = 19;
+
+41 
 P¨amM™agî
  
 ∑ømM™agî
 ;
 
-41 c⁄° 
+42 c⁄° 
 P¨ams
  &
 p
 ;
 
-42 
+43 
 Grid
  
 grid
 ;
 
-43 
+44 
 Sig«ls
  
 sig«ls
 ;
 
-44 
+45 
 Pìps
  
 ≥ïs
 ;
 
-45 
+46 
 simuœt‹
 (
 ¨gc
@@ -15071,7 +15813,7 @@ simuœt‹
 ¨gv
 );
 
-49 
+50 
 visôNeighb‹hood
 (
 Co‹d
@@ -15169,7 +15911,17 @@ b¨rõrTy≥
 zîoFûl
 ();
 
-30 
+27 
+	ggrid
+.
+öôülizeFood
+(
+p
+.
+≥r˚¡ageFoodLoˇti⁄s
+);
+
+31 
 uöt16_t
  
 	gödex
@@ -15179,7 +15931,7 @@ p
 p›uœti⁄
 ; ++index) {
 
-31 
+32 
 	g≥ïs
 [
 ödex
@@ -15193,7 +15945,7 @@ födEm±yLoˇti⁄
 makeR™domGíome
 ());
 
-41 
+42 
 öôülizeNewGíî©i⁄
 (c⁄° 
 °d
@@ -15207,7 +15959,7 @@ Gíome
 gíî©i⁄
 )
 
-43 
+44 
 Gíome
  
 gíî©eChûdGíome
@@ -15219,13 +15971,13 @@ ve˘‹
 ∑ª¡Gíomes
 );
 
-47 
+48 
 	ggrid
 .
 zîoFûl
 ();
 
-48 
+49 
 	ggrid
 .
 ¸óãB¨rõr
@@ -15237,7 +15989,7 @@ p
 ª∂a˚B¨rõrTy≥Gíî©i⁄Numbî
 
 
-49 ? 
+50 ? 
 p
 .
 ª∂a˚B¨rõrTy≥
@@ -15245,13 +15997,23 @@ p
 b¨rõrTy≥
 );
 
-50 
+51 
 	gsig«ls
 .
 zîoFûl
 ();
 
-53 
+52 
+	ggrid
+.
+öôülizeFood
+(
+p
+.
+≥r˚¡ageFoodLoˇti⁄s
+);
+
+55 
 uöt16_t
  
 	gödex
@@ -15261,7 +16023,7 @@ p
 p›uœti⁄
 ; ++index) {
 
-54 
+56 
 	g≥ïs
 [
 ödex
@@ -15277,7 +16039,7 @@ gíî©eChûdGíome
 ∑ª¡Gíomes
 ));
 
-69 
+71 
 •awnNewGíî©i⁄
 (
 gíî©i⁄
@@ -15285,11 +16047,11 @@ gíî©i⁄
 murdîCou¡
 )
 
-71 
+73 
 	gß¸ifi˚dCou¡
  = 0;
 
-73 
+75 
 ≠≥ndEpochLog
 (
 gíî©i⁄
@@ -15299,7 +16061,7 @@ numbîSurviv‹s
 murdîCou¡
 );
 
-74 
+76 
 °d
 ::
 ∑ú
@@ -15315,11 +16077,11 @@ Indiv
 chÆÀnge
 );
 
-75 
+77 
 di•œySig«lU£
 ();
 
-79 
+81 
 	g°d
 ::
 ve˘‹
@@ -15333,7 +16095,7 @@ uöt16_t
 	g∑ª¡s
 ;
 
-82 
+84 
 	g°d
 ::
 ve˘‹
@@ -15343,7 +16105,7 @@ Gíome
 ∑ª¡Gíomes
 ;
 
-84 i‡(
+86 i‡(
 	gp
 .
 	gchÆÀnge
@@ -15351,7 +16113,7 @@ Gíome
 CHALLENGE_ALTRUISM
 ) {
 
-87 
+89 
 uöt16_t
  
 ödex
@@ -15363,7 +16125,7 @@ p
 p›uœti⁄
 ; ++index) {
 
-88 
+90 
 	g°d
 ::
 ∑ú
@@ -15383,7 +16145,7 @@ p
 chÆÀnge
 );
 
-93 i‡(
+95 i‡(
 	g∑s£d
 .
 	gfú°
@@ -15399,7 +16161,7 @@ chÆÀnge
 size
 () > 0) {
 
-94 
+96 
 	g∑ª¡s
 .
 push_back
@@ -15411,7 +16173,7 @@ push_back
 £c⁄d
  } );
 
-103 
+105 
 boﬁ
  
 	gc⁄sidîKöshù
@@ -15419,7 +16181,7 @@ boﬁ
 åue
 ;
 
-104 
+106 
 	g°d
 ::
 ve˘‹
@@ -15429,7 +16191,7 @@ uöt16_t
 ß¸ifi˚sIndexes
 ;
 
-106 
+108 
 uöt16_t
  
 	gödex
@@ -15439,7 +16201,7 @@ p
 p›uœti⁄
 ; ++index) {
 
-108 
+110 
 	g°d
 ::
 ∑ú
@@ -15457,7 +16219,7 @@ boﬁ
 CHALLENGE_ALTRUISM
 );
 
-109 i‡(
+111 i‡(
 	g∑s£d
 .
 	gfú°
@@ -15473,7 +16235,7 @@ CHALLENGE_ALTRUISM
 size
 () > 0) {
 
-110 
+112 
 	g∑ª¡s
 .
 push_back
@@ -15485,7 +16247,7 @@ push_back
 £c⁄d
  } );
 
-113 
+115 
 	g∑s£d
  = 
 ∑s£dSurvivÆCrôîi⁄
@@ -15497,7 +16259,7 @@ push_back
 CHALLENGE_ALTRUISM_SACRIFICE
 );
 
-114 i‡(
+116 i‡(
 	g∑s£d
 .
 	gfú°
@@ -15513,11 +16275,11 @@ CHALLENGE_ALTRUISM_SACRIFICE
 size
 () > 0) {
 
-115 i‡(
+117 i‡(
 	gc⁄sidîKöshù
 ) {
 
-116 
+118 
 	gß¸ifi˚sIndexes
 .
 push_back
@@ -15525,35 +16287,35 @@ push_back
 ödex
 );
 
-118 ++
+120 ++
 	gß¸ifi˚dCou¡
 ;
 
-124 
+126 
 	ggíî©i⁄ToAµlyKöshù
  = 10;
 
-125 
+127 
 c⁄°ex¥
  
 	gÆåuismFa˘‹
  = 10;
 
-127 i‡(
+129 i‡(
 	gc⁄sidîKöshù
 ) {
 
-128 i‡(
+130 i‡(
 	ggíî©i⁄
  > 
 	ggíî©i⁄ToAµlyKöshù
 ) {
 
-130 
+132 
 	gthªshﬁd
  = 0.7;
 
-132 
+134 
 	g°d
 ::
 ve˘‹
@@ -15567,13 +16329,13 @@ uöt16_t
 	gsurvivögKö
 ;
 
-133 
+135 
 	g∑s£s
  = 0;Öas£†< 
 	gÆåuismFa˘‹
 ; ++passes) {
 
-134 
+136 
 uöt16_t
  
 	gß¸ifi˚dIndex
@@ -15581,7 +16343,7 @@ uöt16_t
 ß¸ifi˚sIndexes
 ) {
 
-136 
+138 
 °¨tIndex
  = 
 øndomUöt
@@ -15591,7 +16353,7 @@ uöt16_t
 size
 () - 1);
 
-137 
+139 
 	gcou¡
  = 0; cou¡ < 
 	g∑ª¡s
@@ -15599,7 +16361,7 @@ size
 size
 (); ++count) {
 
-138 c⁄° 
+140 c⁄° 
 	g°d
 ::
 ∑ú
@@ -15617,7 +16379,7 @@ cou¡
 size
 ()];
 
-139 c⁄° 
+141 c⁄° 
 	gGíome
  &
 	gg1
@@ -15629,7 +16391,7 @@ size
 gíome
 ;
 
-140 c⁄° 
+142 c⁄° 
 	gGíome
  &
 	gg2
@@ -15643,7 +16405,7 @@ fú°
 gíome
 ;
 
-141 
+143 
 	gsimû¨ôy
  = 
 gíomeSimû¨ôy
@@ -15653,13 +16415,13 @@ g1
 g2
 );
 
-142 i‡(
+144 i‡(
 	gsimû¨ôy
  >
 thªshﬁd
 ) {
 
-143 
+145 
 survivögKö
 .
 push_back
@@ -15667,7 +16429,7 @@ push_back
 possibÀP¨ít
 );
 
-150 
+152 
 	g°d
 ::
 cout
@@ -15677,13 +16439,13 @@ cout
 size
 () << "Öassed, "
 
-151 << 
+153 << 
 ß¸ifi˚sIndexes
 .
 size
 () << " sacrificed, "
 
-152 << 
+154 << 
 survivögKö
 .
 size
@@ -15693,7 +16455,7 @@ size
 ídl
 ;
 
-153 
+155 
 	g∑ª¡s
  = 
 °d
@@ -15703,7 +16465,7 @@ move
 survivögKö
 );
 
-157 
+159 
 	gnumbîSaved
  = 
 ß¸ifi˚dCou¡
@@ -15711,7 +16473,7 @@ survivögKö
 ÆåuismFa˘‹
 ;
 
-158 
+160 
 	g°d
 ::
 cout
@@ -15729,7 +16491,7 @@ numbîSaved
 ídl
 ;
 
-159 i‡(
+161 i‡(
 	g∑ª¡s
 .
 size
@@ -15737,7 +16499,7 @@ size
 	gnumbîSaved
  <Öarents.size()) {
 
-160 
+162 
 	g∑ª¡s
 .
 îa£
@@ -15751,7 +16513,7 @@ numbîSaved
 íd
 ());
 
-166 
+168 
 	g°d
 ::
 s‹t
@@ -15763,7 +16525,7 @@ begö
 íd
 (),
 
-167 [](c⁄° 
+169 [](c⁄° 
 °d
 ::
 ∑ú
@@ -15775,7 +16537,7 @@ uöt16_t
 ∑ª¡2
 ) {
 
-168  
+170  
 ∑ª¡1
 .
 £c⁄d
@@ -15783,7 +16545,7 @@ uöt16_t
 ∑ª¡2
 .second;
 
-173 c⁄° 
+175 c⁄° 
 	g°d
 ::
 ∑ú
@@ -15795,7 +16557,7 @@ uöt16_t
 ∑ª¡s
 ) {
 
-174 
+176 
 ∑ª¡Gíomes
 .
 push_back
@@ -15809,7 +16571,7 @@ fú°
 gíome
 );
 
-177 
+179 
 	g°d
 ::
 cout
@@ -15825,7 +16587,7 @@ size
 ídl
 ;
 
-178 
+180 
 ≠≥ndEpochLog
 (
 gíî©i⁄
@@ -15837,13 +16599,13 @@ size
 murdîCou¡
 );
 
-183 i‡(
+185 i‡(
 	g∑ª¡Gíomes
 .
 size
 () != 0) {
 
-185 
+187 
 öôülizeNewGíî©i⁄
 (
 ∑ª¡Gíomes
@@ -15851,11 +16613,11 @@ size
 gíî©i⁄
  + 1);
 
-189 
+191 
 öôülizeGíî©i⁄0
 ();
 
-192  
+194  
 	g∑ª¡Gíomes
 .
 size
@@ -17327,7 +18089,73 @@ boﬁ
 	gÁl£
 , 0.0 };
 
+339 
+	gCHALLENGE_EAT_TO_SURVIVE
+:
+
 341 
+uöt32_t
+ 
+numFoodLoˇti⁄s
+ = (uöt32_tË((
+p
+.
+sizeX
+ *Ö.
+sizeY
+ *Ö.
+≥r˚¡ageFoodLoˇti⁄s
+) / 100);
+
+342 
+	gsc‹e
+ = 0;
+
+343 i‡(
+	gödiv
+.
+	gíîgy
+ > 0) {
+
+344 
+	gsc‹e
+ = (Ë((
+numFoodLoˇti⁄s
+ * 
+p
+.
+íîgyPîFoodUnô
+ +Ö.
+öôülE√rgy
+Ë/ 
+ödiv
+.
+íîgy
+);
+
+345  
+	g°d
+::
+∑ú
+<
+boﬁ
+, > { 
+	gåue
+, 
+	gsc‹e
+ };
+
+347  
+	g°d
+::
+∑ú
+<
+boﬁ
+, > { 
+	gÁl£
+, 0 };
+
+352 
 as£π
 (
 Ál£

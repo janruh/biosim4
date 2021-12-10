@@ -36,6 +36,7 @@ std::string sensorName(Sensor sensor)
     case SIGNAL0_LR: return "signal 0 LR"; break;
     case FOOD_LR: return "food lr"; break;
     case FOOD_FWD: return "food fwd"; break;
+    case ENERGY: return "energy"; break;
     case GENETIC_SIM_FWD: return "genetic similarity fwd"; break;
     default: assert(false); break;
     }
@@ -95,6 +96,7 @@ std::string sensorShortName(Sensor sensor)
     case SIGNAL0_LR: return "Slr"; break;
     case FOOD_LR: return "Flr"; break;
     case FOOD_FWD: return "Ffd"; break;
+    case ENERGY: return "E"; break;
     case GENETIC_SIM_FWD: return "Gen"; break;
     default: assert(false); break;
     }

@@ -29,12 +29,14 @@ Coord Grid::findEmptyLocation() const {
     return loc;
 }
 
-void Grid::initializeFood(unsigned percentageFoodLocations)
+void Grid::initializeFood(unsigned percentageFoodLocations, unsigned simStep)
 {
    uint32_t num_cells = data.size() * grid.data[0].size();
    uint32_t num_food_cells = (uint32_t) ((percentageFoodLocations * num_cells) / 100);
 
-   foodLocations.clear();
+   if (simStep == 0) {
+       foodLocations.clear();
+   }
 
    for (unsigned i = 0; i < num_food_cells; i++) {
        Coord loc = findEmptyLocation();

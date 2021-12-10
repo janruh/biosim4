@@ -49,6 +49,7 @@ enum Sensor {
     POPULATION_LR,     // W population density in the left-right axis
     OSC1,              // I oscillator +-value
     AGE,               // I
+    ENERGY,            // I sense own energy levels 
     BARRIER_FWD,       // W neighborhood barrier distance forward-reverse axis
     BARRIER_LR,        // W neighborhood barrier distance left-right axis
     FOOD_LR,           // W neighborhood food distance left-right axis

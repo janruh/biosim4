@@ -18,7 +18,7 @@ void Indiv::initialize(uint16_t index_, Coord loc_, const Genome &&genome_)
     grid.set(loc_, index_);
     age = 0;
     size = 1;
-    energy = 0;
+    energy = p.initialEnergy;
     oscPeriod = 34; // ToDo !!! define a constant
     alive = true;
     lastMoveDir = Dir::random8();

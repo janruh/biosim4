@@ -36,6 +36,9 @@ void ParamManager::setDefaults()
     privParams.maxGenerations = 100;
     privParams.barrierType = 0;
     privParams.percentageFoodLocations = 20;
+    privParams.energyPerFoodUnit = 100;
+    privParams.frequencyFoodSpawn = 300;
+    privParams.movementEnergyCost = 1;
     privParams.replaceBarrierType = 0;
     privParams.replaceBarrierTypeGenerationNumber = (uint32_t)-1;
     privParams.numThreads = 1;
@@ -177,6 +180,9 @@ void ParamManager::ingestParameter(std::string name, std::string val)
         else if (name == "numthreads" && isUint && uVal > 0 && uVal < (uint16_t)-1) {
             privParams.numThreads = uVal; break;
         }
+        else if (name == "initialenergy" && isUint) {
+            privParams.initialEnergy = uVal; break;
+        }
         else if (name == "signallayers" && isUint && uVal < (uint16_t)-1) {
             privParams.signalLayers = uVal; break;
         }
@@ -266,6 +272,15 @@ void ParamManager::ingestParameter(std::string name, std::string val)
         }
         else if (name == "percentagefoodlocations" && isUint) {
             privParams.percentageFoodLocations = uVal; break;
+        }
+        else if (name == "energyperfoodunit" && isUint && uVal > 0) {
+            privParams.energyPerFoodUnit = uVal; break;
+        }
+        else if (name == "movementenergycost" && isUint) {
+            privParams.movementEnergyCost = uVal; break;
+        }
+        else if (name == "frequencyfoodspawn" && isUint && uVal > 0) {
+            privParams.frequencyFoodSpawn = uVal; break;
         }
         else {
             std::cout << "Invalid param: " << name << " = " << val << std::endl;

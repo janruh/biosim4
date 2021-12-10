@@ -133,6 +133,10 @@ void simulator(int argc, char **argv)
         unsigned murderCount = 0; // for reporting purposes
         for (unsigned simStep = 0; simStep < p.stepsPerGeneration; ++simStep) {
 
+            if (simStep % p.frequencyFoodSpawn == 0) {
+                grid.initializeFood(p.percentageFoodLocations, simStep);
+            }
+
             // multithreaded loop: index 0 is reserved, start at 1
 #pragma omp parallel for num_threads(p.numThreads) default(shared) firstprivate(randomUint) lastprivate(randomUint) schedule(auto)
             for (unsigned indivIndex = 1; indivIndex <= p.population; ++indivIndex) {

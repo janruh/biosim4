@@ -67,6 +67,15 @@ evaluated multithreadedly.
 
 void executeActions(Indiv &indiv, std::array<float, Action::NUM_ACTIONS> &actionLevels)
 {
+    if (indiv.energy > 0) {
+        indiv.energy -= 1;
+    } else {
+
+        if (p.initialEnergy > 0) {
+            indiv.alive = false; 
+            return;
+        }
+    }
     // Only a subset of all possible actions might be enabled (i.e., compiled in).
     // This returns true if the specified action is enabled. See sensors-actions.h
     // for how to enable sensors and actions during compilation.
@@ -230,12 +239,15 @@ void executeActions(Indiv &indiv, std::array<float, Action::NUM_ACTIONS> &action
 
     // Move there if it's a valid location
     Coord newLoc = indiv.loc + movementOffset;
-    if (grid.isInBounds(newLoc) && (grid.isEmptyAt(newLoc) || grid.isFoodAt(newLoc))) {
+    if (grid.isInBounds(newLoc) && indiv.energy >= p.movementEnergyCost
+            && (grid.isEmptyAt(newLoc) || grid.isFoodAt(newLoc))) {
         peeps.queueForMove(indiv, newLoc);
+
+        indiv.energy -= p.movementEnergyCost;
 
         // If there is food at new location, consume
         if (grid.isFoodAt(newLoc)) {
-            indiv.energy += 1;
+            indiv.energy += p.energyPerFoodUnit;
             grid.set(newLoc, EMPTY);
             grid.removeFoodLocation(newLoc);
         }

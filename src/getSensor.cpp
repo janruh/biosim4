@@ -234,10 +234,19 @@ float Indiv::getSensor(Sensor sensorNum, unsigned simStep) const
 
     switch (sensorNum) {
     case Sensor::AGE:
+    {
         // Converts age (units of simSteps compared to life expectancy)
         // linearly to normalized sensor range 0.0..1.0
         sensorVal = (float)age / p.stepsPerGeneration;
         break;
+    }
+    case Sensor::ENERGY:
+    {
+        // Converts energy linearly to normalized sensor range 0.0..1.0
+        uint32_t numFoodLocations = (uint32_t) ((p.sizeX * p.sizeY * p.percentageFoodLocations) / 100);
+        sensorVal = (float) (energy / (numFoodLocations * p.energyPerFoodUnit + p.initialEnergy));
+        break;
+    }
     case Sensor::BOUNDARY_DIST:
     {
         // Finds closest boundary, compares that to the max possible dist
