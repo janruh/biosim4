@@ -338,7 +338,7 @@ std::pair<bool, float> passedSurvivalCriterion(const Indiv &indiv, unsigned chal
         }
     case CHALLENGE_EAT_TO_SURVIVE:
         {
-            uint32_t numFoodLocations = (uint32_t) ((p.sizeX * p.sizeY * p.percentageFoodLocations) / 100);
+            uint32_t numFoodLocations = grid.calculateTotalFoodSpawned(p.stepsPerGeneration - 1);
             float score = (float) ((float) indiv.energy / (numFoodLocations * p.energyPerFoodUnit + p.initialEnergy));
             return std::pair<bool, float> { score > 0.0, score };
         }

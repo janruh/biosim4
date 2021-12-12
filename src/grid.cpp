@@ -13,6 +13,11 @@ void Grid::init(uint16_t sizeX, uint16_t sizeY)
     data = std::vector<Column>(sizeX, col);
 }
 
+const unsigned Grid::calculateTotalFoodSpawned(unsigned simStep)
+{
+    unsigned multiplier = (unsigned) (simStep / p.frequencyFoodSpawn);
+    return (unsigned) ((p.sizeX * p.sizeY * p.percentageFoodLocations) / 100 * (multiplier + 1));
+}
 
 // Finds a random unoccupied location in the grid
 Coord Grid::findEmptyLocation() const {
@@ -52,6 +57,23 @@ void Grid::removeFoodLocation(Coord loc)
     if (position != foodLocations.end()) {
         foodLocations.erase(position);
     }
+}
+
+std::vector<Coord>* Grid::getNeighborhood(Coord &loc, float radius)
+{
+    std::vector<Coord> *neighborhood = new std::vector<Coord>();
+
+    for (int dx = -std::min<int>(radius, loc.x); dx <= std::min<int>(radius, (p.sizeX - loc.x) - 1); ++dx) {
+        int16_t x = loc.x + dx;
+        assert(x >= 0 && x < p.sizeX);
+        int extentY = (int)sqrt(radius * radius - dx * dx);
+        for (int dy = -std::min<int>(extentY, loc.y); dy <= std::min<int>(extentY, (p.sizeY - loc.y) - 1); ++dy) {
+            int16_t y = loc.y + dy;
+            assert(y >= 0 && y < p.sizeY);
+            neighborhood->push_back(loc);
+        }
+    }
+    return neighborhood;
 }
 
 // This is a utility function used when inspecting a local neighborhood around

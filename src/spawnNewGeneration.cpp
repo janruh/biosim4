@@ -55,7 +55,6 @@ void initializeNewGeneration(const std::vector<Genome> &parentGenomes, unsigned 
     }
 }
 
-
 // At this point, the deferred death queue and move queue have been processed
 // and we are left with zero or more individuals who will repopulate the
 // world grid.
@@ -70,7 +69,9 @@ unsigned spawnNewGeneration(unsigned generation, unsigned murderCount)
 {
     unsigned sacrificedCount = 0; // for the altruism challenge
 
-    extern void appendEpochLog(unsigned generation, unsigned numberSurvivors, unsigned murderCount);
+    extern void appendEpochLog(unsigned generation, unsigned numberSurvivors, unsigned murderCount,
+        unsigned percentFoodConsumed, unsigned totalFoodSpawned, unsigned avgEnergy,
+        unsigned minEnergy, unsigned maxEnergy);
     extern std::pair<bool, float> passedSurvivalCriterion(const Indiv &indiv, unsigned challenge);
     extern void displaySignalUse();
 
@@ -85,6 +86,9 @@ unsigned spawnNewGeneration(unsigned generation, unsigned murderCount)
         // First, make a list of all the individuals who will become parents; save
         // their scores for later sorting. Indexes start at 1.
         for (uint16_t index = 1; index <= p.population; ++index) {
+            if (peeps[index].energy == 0) {
+                peeps[index].alive = false;
+            }
             std::pair<bool, float> passed = passedSurvivalCriterion(peeps[index], p.challenge);
             // Save the parent genome if it results in valid neural connections
             // ToDo: if the parents no longer need their genome record, we could
@@ -174,8 +178,28 @@ unsigned spawnNewGeneration(unsigned generation, unsigned murderCount)
         parentGenomes.push_back(peeps[parent.first].genome);
     }
 
+    unsigned totalFoodSpawned = grid.calculateTotalFoodSpawned(p.stepsPerGeneration - 1);
+    unsigned foodLocationsRemaining = grid.getFoodLocations().size();
+    unsigned percentageFoodConsumed = (unsigned) ((1.0 - ((float) foodLocationsRemaining / totalFoodSpawned)) * 100);
+    unsigned aliveCount = 0;
+    unsigned minEnergy = 0xFFFFFFFF;
+    unsigned maxEnergy = 0;
+    unsigned aliveEnergySum = 0;
+    for (uint16_t index = 1; index <= p.population; ++index) {
+        if (peeps[index].alive) {
+            aliveCount++;
+            aliveEnergySum += peeps[index].energy;
+            if (peeps[index].energy < minEnergy) {
+                minEnergy = peeps[index].energy;
+            }
+            if (peeps[index].energy > maxEnergy) {
+                maxEnergy = peeps[index].energy;
+            }
+        }
+    }
     std::cout << "Gen " << generation << ", " << parentGenomes.size() << " survivors" << std::endl;
-    appendEpochLog(generation, parentGenomes.size(), murderCount);
+    appendEpochLog(generation, parentGenomes.size(), murderCount, percentageFoodConsumed, 
+            totalFoodSpawned, (unsigned) (aliveEnergySum / aliveCount), minEnergy, maxEnergy);
     //displaySignalUse(); // for debugging only
 
     // Now we have a container of zero or more parents' genomes

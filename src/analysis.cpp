@@ -58,6 +58,7 @@ std::string actionName(Action action)
     case SET_OSCILLATOR_PERIOD: return "set osc1"; break;
     case EMIT_SIGNAL0: return "emit signal 0"; break;
     case KILL_FORWARD: return "kill fwd"; break;
+    case EAT_INDIV_FORWARD: return "eat fwd"; break;
     case MOVE_REVERSE: return "move reverse"; break;
     case MOVE_LEFT: return "move left"; break;
     case MOVE_RIGHT: return "move right"; break;
@@ -119,6 +120,7 @@ std::string actionShortName(Action action)
     case SET_OSCILLATOR_PERIOD: return "OSC"; break;
     case EMIT_SIGNAL0: return "SG"; break;
     case KILL_FORWARD: return "Klf"; break;
+    case EAT_INDIV_FORWARD: return "Elf"; break;
     case MOVE_REVERSE: return "Mrv"; break;
     case MOVE_LEFT: return "MvL"; break;
     case MOVE_RIGHT: return "MvR"; break;
@@ -275,7 +277,9 @@ float averageGenomeLength()
 // The epoch log contains one line per generation in a format that can be
 // fed to graphlog.gp to produce a chart of the simulation progress.
 // ToDo: remove hardcoded filename.
-void appendEpochLog(unsigned generation, unsigned numberSurvivors, unsigned murderCount)
+void appendEpochLog(unsigned generation, unsigned numberSurvivors, unsigned murderCount,
+        unsigned percentFoodConsumed, unsigned totalFoodSpawned, unsigned avgEnergy,
+        unsigned minEnergy, unsigned maxEnergy)
 {
     std::ofstream foutput;
 
@@ -288,7 +292,9 @@ void appendEpochLog(unsigned generation, unsigned numberSurvivors, unsigned murd
 
     if (foutput.is_open()) {
         foutput << generation << " " << numberSurvivors << " " << geneticDiversity()
-                << " " << averageGenomeLength() << " " << murderCount << std::endl;
+                << " " << averageGenomeLength() << " " << murderCount
+                << " " << percentFoodConsumed <<  " " << totalFoodSpawned
+                << " " << avgEnergy << " " << minEnergy << " " << maxEnergy << std::endl;
     } else {
         assert(false);
     }
