@@ -199,6 +199,7 @@ bool ImageWriter::saveVideoFrameSync(unsigned simStep, unsigned generation)
         if (indiv.alive) {
             data.indivLocs.push_back(indiv.loc);
             data.indivColors.push_back(makeGeneticColor(indiv.genome));
+            data.indivSizes.push_back(indiv.size);
         }
     }
 
