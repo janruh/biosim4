@@ -33,8 +33,12 @@ struct Params {
     double geneInsertionDeletionRate; // 0.0..1.0
     double deletionRatio; // 0.0..1.0
     bool killEnable;
+    bool eatIndividualEnable; // 0.0..1.0
+    unsigned eatIndividualEnergyCost; // > 0
+    unsigned baseEnergyCost;
     bool sexualReproduction;
     bool chooseParentsByFitness;
+    float neighborGeneticSimilarityThreshold; // 0.0..1.0
     float populationSensorRadius; // > 0.0
     unsigned signalSensorRadius; // > 0
     float responsiveness; // >= 0.0

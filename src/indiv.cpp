@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <cassert>
+#include <math.h>
 #include "simulator.h"
 
 namespace BS {
@@ -27,6 +28,17 @@ void Indiv::initialize(uint16_t index_, Coord loc_, const Genome &&genome_)
     challengeBits = (unsigned)false; // will be set true when some task gets accomplished
     genome = std::move(genome_);
     createWiringFromGenome();
+}
+
+double Indiv::calculateBaseEnergyCost(double mult, double exponent)
+{
+    double energyCost = mult * exp(exponent * size);
+    return energyCost < 1 ? 0.0 : energyCost;
+}
+
+unsigned Indiv::calculateGrowthThreshold(unsigned m, unsigned offset)
+{
+    return m * size + offset;
 }
 
 } // end namespace BS

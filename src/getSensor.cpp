@@ -243,7 +243,7 @@ float Indiv::getSensor(Sensor sensorNum, unsigned simStep) const
     case Sensor::ENERGY:
     {
         // Converts energy linearly to normalized sensor range 0.0..1.0
-        uint32_t numFoodLocations = (uint32_t) ((p.sizeX * p.sizeY * p.percentageFoodLocations) / 100);
+        uint32_t numFoodLocations = grid.calculateTotalFoodSpawned(simStep);
         sensorVal = (float) (energy / (numFoodLocations * p.energyPerFoodUnit + p.initialEnergy));
         break;
     }

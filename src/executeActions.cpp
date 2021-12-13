@@ -67,8 +67,12 @@ evaluated multithreadedly.
 
 void executeActions(Indiv &indiv, std::array<float, Action::NUM_ACTIONS> &actionLevels)
 {
-    if (indiv.energy > 0) {
-        indiv.energy -= 1;
+    if (indiv.energy > 0 && p.initialEnergy > 0) {
+        indiv.energy -= indiv.calculateBaseEnergyCost(7.4, -0.35);
+        if (indiv.energy > indiv.calculateGrowthThreshold(100, 300)) {
+            indiv.size += 1;
+            indiv.energy = p.initialEnergy;
+        }
     } else {
 
         if (p.initialEnergy > 0) {
@@ -143,6 +147,42 @@ void executeActions(Indiv &indiv, std::array<float, Action::NUM_ACTIONS> &action
             Coord otherLoc = indiv.loc + indiv.lastMoveDir;
             if (grid.isInBounds(otherLoc) && grid.isOccupiedAt(otherLoc)) {
                 Indiv &indiv2 = peeps.getIndiv(otherLoc);
+                if (indiv2.alive) {
+                    assert((indiv.loc - indiv2.loc).length() == 1);
+                    peeps.queueForDeath(indiv2);
+                }
+            }
+        }
+    }
+
+    // Eat forward -- if this action value is > threshold, value is converted to probability
+    // of an attempted eating of an individual. Probabilities under the threshold are considered 0.0.
+    // If this action neuron is enabled but not driven, the neighbors are safe.
+    if (isEnabled(Action::EAT_INDIV_FORWARD) && p.eatIndividualEnable) {
+        float level = actionLevels[Action::EAT_INDIV_FORWARD];
+        level = (std::tanh(level) + 1.0) / 2.0; // convert to 0.0..1.0
+        level *= responsivenessAdjusted;
+        if (prob2bool((level - ACTION_MIN) / ACTION_RANGE)) {
+            Coord otherLoc = indiv.loc + indiv.lastMoveDir;
+            std::vector<Coord> *neighborhood = grid.getNeighborhood(otherLoc, 2.5);
+            unsigned totalSize = 0;
+            for (size_t i = 0; i < neighborhood->size(); i++) {
+                if (grid.isInBounds(neighborhood->at(i))
+                        && grid.isOccupiedAt(neighborhood->at(i))) {
+                    Indiv &neighbor = peeps.getIndiv(neighborhood->at(i));
+                    if (genomeSimilarity(indiv.genome, neighbor.genome) >= p.neighborGeneticSimilarityThreshold) {
+                        totalSize += neighbor.size;
+                    }
+
+                }
+                // predator should be able to sense this beforehand
+            }
+            delete neighborhood;
+            if (grid.isInBounds(otherLoc) && grid.isOccupiedAt(otherLoc)
+                    && totalSize <= indiv.size) {
+                Indiv &indiv2 = peeps.getIndiv(otherLoc);
+                indiv.energy += indiv2.energy;
+                indiv.energy -= p.eatIndividualEnergyCost; // make this a function of preys adjacent related individual's combined size
                 if (indiv2.alive) {
                     assert((indiv.loc - indiv2.loc).length() == 1);
                     peeps.queueForDeath(indiv2);
