@@ -211,10 +211,10 @@ void ParamManager::ingestParameter(std::string name, std::string val)
         else if (name == "eatindividualenable" && isBool) {
             privParams.eatIndividualEnable = bVal; break;
         }
-        else if (name == "eatindividualenergyost" && isUint && uVal > 0) {
+        else if (name == "eatindividualenergycost" && isUint && uVal > 0) {
             privParams.eatIndividualEnergyCost = uVal; break;
         }
-        else if (name == "baseenergyost" && isUint) {
+        else if (name == "baseenergycost" && isUint) {
             privParams.baseEnergyCost = uVal; break;
         }
         else if (name == "sexualreproduction" && isBool) {
