@@ -52,7 +52,7 @@ public:
     void set(Coord loc, uint16_t val) { data[loc.x][loc.y] = val; }
     void set(uint16_t x, uint16_t y, uint16_t val) { data[x][y] = val; }
     Coord findEmptyLocation() const;
-    std::vector<Coord>* getNeighborhood(Coord loc, float radius);
+    std::vector<Coord>* getNeighborhood(Coord &loc, float radius);
     void initializeFood(unsigned percentageFoodLocations, unsigned simStep);
     void createBarrier(unsigned barrierType);
     const std::vector<Coord> &getBarrierLocations() const { return barrierLocations; }

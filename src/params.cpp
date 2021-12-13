@@ -48,6 +48,10 @@ void ParamManager::setDefaults()
     privParams.geneInsertionDeletionRate = 0.0001;
     privParams.deletionRatio = 0.7;
     privParams.killEnable = false;
+    privParams.eatIndividualEnable = false;
+    privParams.eatIndividualEnergyCost = 5;
+    privParams.baseEnergyCost = 1;
+    privParams.neighborGeneticSimilarityThreshold = 0.9;
     privParams.sexualReproduction = true;
     privParams.chooseParentsByFitness = true;
     privParams.populationSensorRadius = 2.0;
@@ -204,6 +208,15 @@ void ParamManager::ingestParameter(std::string name, std::string val)
         else if (name == "killenable" && isBool) {
             privParams.killEnable = bVal; break;
         }
+        else if (name == "eatindividualenable" && isBool) {
+            privParams.eatIndividualEnable = bVal; break;
+        }
+        else if (name == "eatindividualenergyost" && isUint && uVal > 0) {
+            privParams.eatIndividualEnergyCost = uVal; break;
+        }
+        else if (name == "baseenergyost" && isUint) {
+            privParams.baseEnergyCost = uVal; break;
+        }
         else if (name == "sexualreproduction" && isBool) {
             privParams.sexualReproduction = bVal; break;
         }
@@ -233,6 +246,9 @@ void ParamManager::ingestParameter(std::string name, std::string val)
         }
         else if (name == "valencesaturationmag" && isFloat && dVal >= 0.0) {
             privParams.valenceSaturationMag = dVal; break;
+        }
+        else if (name == "neighborgeneticsimilaritythreshold" && isFloat) {
+            privParams.neighborGeneticSimilarityThreshold = dVal; break;
         }
         else if (name == "savevideo" && isBool) {
             privParams.saveVideo = bVal; break;

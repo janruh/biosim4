@@ -32,6 +32,8 @@ struct Indiv {
     float getSensor(Sensor, unsigned simStep) const;
     void initialize(uint16_t index, Coord loc, const Genome &&genome);
     void createWiringFromGenome(); // creates .nnet member from .genome member
+    double calculateBaseEnergyCost(double mult, double exponent);
+    unsigned calculateGrowthThreshold(unsigned m, unsigned offset);
     void printNeuralNet() const;
     void printIGraphEdgeList() const;
     void printGenome() const;

@@ -81,7 +81,7 @@ void saveOneFrameImmed(const ImageFrameData &data)
         image.draw_circle(
                 data.indivLocs[i].x * p.displayScale,
                 ((p.sizeY - data.indivLocs[i].y) - 1) * p.displayScale,
-                p.agentSize,
+                p.agentSize - 1 + data.indivSizes[i],
                 color,  // rgb
                 1.0);  // alpha
     }
@@ -149,12 +149,14 @@ bool ImageWriter::saveVideoFrame(unsigned simStep, unsigned generation)
         data.indivColors.clear();
         data.barrierLocs.clear();
         data.signalLayers.clear();
+        data.indivSizes.clear();
         //todo!!!
         for (uint16_t index = 1; index <= p.population; ++index) {
             const Indiv &indiv = peeps[index];
             if (indiv.alive) {
                 data.indivLocs.push_back(indiv.loc);
                 data.indivColors.push_back(makeGeneticColor(indiv.genome));
+                data.indivSizes.push_back(indiv.size);
             }
         }
 
